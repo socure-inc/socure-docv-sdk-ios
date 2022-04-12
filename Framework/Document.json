@@ -1,0 +1,255 @@
+{
+    "main_buttons": {
+        "icon_help": {
+            "icon_name":"question",
+            "overlayColor":{"R":255,"G":255,"B":255,"A":1.0}
+        },
+        "icon_torch_off":{
+            "icon_name":"torchOff",
+            "overlayColor":{"R":255,"G":255,"B":255,"A":1.0}
+        },
+        "icon_torch_on":{
+            "icon_name":"torchOn",
+            "overlayColor":{"R":255,"G":255,"B":255,"A":1.0}
+        },
+        "icon_back":{
+            "icon_name":"back",
+            "overlayColor":{"R":255,"G":255,"B":255,"A":1.0}
+        },
+        "icon_close":{
+            "icon_name":"close" ,
+            "overlayColor":{"R":255,"G":255,"B":255,"A":1.0}
+        }
+    },
+    "help":{
+        "cornerRadius":20,
+        "action_icons": {
+            "icon_close":{
+                "icon_name":"tutorialClose" ,
+                "overlayColor":{"R":18,"G":18,"B":18,"A":1.0},
+            },
+            "icon_back":{
+                "icon_name":"tutorialBack",
+                "overlayColor":{"R":18,"G":18,"B":18,"A":1.0},
+            },
+        },
+        "navigation_bar": {
+            "backgroundColor": {"R":255,"G":255,"B":255,"A":1.0},
+            "primaryColor": {"R":18,"G":18,"B":18,"A":1.0},
+            "navigationBarIsTranslucent":"true",
+            "textColor":{"R":18,"G":18,"B":18,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize:":21,
+        },
+        "tutorial_views":{
+            "textColor":{"R":18,"G":18,"B":18,"A":1.0},
+            "backgroundColor":{"R":251,"G":251,"B":251,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize:":14,
+            "dropShadowColor":{"R":170,"G":170,"B":170,"A":1.0},
+            "dropShadowSize":{"width":1, "height":1},
+            "dropShadowOpacity:":0.5,
+            "shadowRadius":5.0,
+            "icon_listItem":{
+                "icon_name":"checkmark",
+                "overlayColor":{"R":255,"G":105,"B":0,"A":1.0},
+            },
+            "nobarcode_button":{
+                "borderColor":{"R":255,"G":105,"B":0,"A":1.0},
+                "textFont":"Inter-Bold",
+                "textSize":16,
+                "textColor":{"R":33,"G":33,"B":33,"A":1.0},
+                "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+            },
+            "idOrientation_button":{
+                "borderColor":{"R":33,"G":33,"B":33,"A":1.0},
+                "textFont":"Inter-Bold",
+                "textSize":16,
+                "textColor":{"R":33,"G":33,"B":33,"A":1.0},
+                "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+            },
+            "continue_button":{
+                "borderColor":{"R":255,"G":105,"B":0,"A":1.0},
+                "textFont":"Inter-Bold",
+                "textSize":16,
+                "textColor":{"R":33,"G":33,"B":33,"A":1.0},
+                "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+            },
+            "needHelp_button":{
+                "borderColor":{"R":255,"G":105,"B":0,"A":1.0},
+                "textFont":"Inter-Bold",
+                "textSize":16,
+                "textColor":{"R":33,"G":33,"B":33,"A":1.0},
+                "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+            },
+        },
+        "animations":{
+            "frontId":"howto_front_id",
+            "backId":"howto_back_id",
+            "passport":"howto_passport",
+            "selfie":"howto_selfie",
+            "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+        },
+        "learnMore": {
+            "labelTextFont":"Inter-Bold",
+            "labelTextColor":{"R":33,"G":33,"B":33,"A":1.0},
+            "labelTextSize":16,
+            "icon_arrow":{
+                "icon_name":"arrow",
+                "overlayColor":{"R":33,"G":33,"B":33,"A":1.0}
+            },
+            "linkTextFont":"Inter-Bold",
+            "linkTextColor":{"R":33,"G":33,"B":33,"A":1.0},
+            "linkTextSize":12,
+        },
+        "orientation": {
+            "horizontalID": {
+                "icon_name":"hID",
+                "overlayColor":{"R":0,"G":0,"B":0,"A":1.0},
+                "titleTextFont":"Inter-Bold",
+                "titleTextColor":{"R":0,"G":0,"B":0,"A":1.0},
+                "titleTextSize":12,
+            },
+            "verticalID": {
+                "icon_name":"vID",
+                "overlayColor":{"R":0,"G":0,"B":0,"A":1.0},
+                "titleTextFont":"Inter-Bold",
+                "titleTextColor":{"R":0,"G":0,"B":0,"A":1.0},
+                "titleTextSize":12,
+            },
+            "icon_listItem":{
+                "icon_name":"tutorCheck",
+                "overlayColor":{"R":18,"G":18,"B":18,"A":1.0},
+            },
+            "titleTextFont":"Inter-Bold",
+            "titleTextColor":{"R":18,"G":18,"B":18,"A":1.0},
+            "titleTextSize":16,
+            "bodyTextFont":"Inter-Regular",
+            "bodyTextColor":{"R":18,"G":18,"B":18,"A":1.0},
+            "bodyTextSize":14,
+            "imagesBackgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "imagesDropShadowColor":{"R":171,"G":171,"B":171,"A":1.0},
+            "imagesDropShadowOpacity":0.5,
+            "imagesDropShadowRadius":10,
+            "imagesCornerRadius":10,
+            "imagesDropShadowSize":{"width":1, "height":1},
+            "backgroundColor":{"R":251,"G":251,"B":251,"A":1.0},
+            "buttons":{
+                "borderColor":{"R":255,"G":105,"B":0,"A":1.0},
+                "borderColor_active":{"R":255,"G":105,"B":0,"A":1.0},
+                "textFont":"Inter-Bold",
+                "textSize":16,
+                "textColor":{"R":33,"G":33,"B":33,"A":1.0},
+                "textColor_active":{"R":255,"G":255,"B":255,"A":1.0},
+                "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+                "backgroundColor_active":{"R":255,"G":105,"B":0,"A":1.0},
+                "cornerRadius":10,
+                "borderWidth":1,
+            },
+        },
+    },
+    "manual_overlay":{
+        "border_width": 3,
+        "borderColor": {"R":255,"G":130,"B":0,"A":1.0},
+        "backgroundColor": {"R":216,"G":216,"B":216,"A":0.5},
+        "textFont":"Inter-Bold",
+        "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+        "textSize:":16,
+        "overlayBackgroundColor":{"R":0,"G":0,"B":0,"A":0.5},
+        "lineDashPattern":[],
+        "lineDashPhase":0,
+        "cornerRadius":0,
+    },
+    "navigation_bar":{
+        "barTintColor": {"R":0,"G":0,"B":0,"A":0.0},
+        "tintColor": {"R":255,"G":255,"B":255,"A":1.0},
+        "navigationBarIsTranslucent":"true",
+        "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+        "textFont":"Inter-Regular",
+        "textSize:":21,
+    },
+    "segmented_control":{
+        "textFont-selected":"Inter-Bold",
+        "textFont-default":"Inter-Regular",
+        "textSize-selected":14,
+        "textSize-default":14,
+        "textColor-selected":{"R":255,"G":130,"B":0,"A":1.0},
+        "textColor-default":{"R":255,"G":255,"B":255,"A":1.0},
+    },
+    "status_display":{
+        "countdown_display":{
+            "highlight-color":{"R":255,"G":130,"B":0,"A":1.0},
+            "textFont":"Inter-Bold",
+            "textSize":40,
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            
+        },
+        "camera_button":{
+            "outerCircleLayer-color":{"R":255,"G":255,"B":255,"A":1.0},
+            "innerCircleLayer-color":{"R":255,"G":255,"B":255,"A":1.0},
+        },
+        "activity_indicator": {
+            "color":{"R":255,"G":255,"B":255,"A":1.0},
+        }
+    },
+    "confirmation_display":{
+        "overlayColor":{"R":0,"G":0,"B":0,"A":0.65},
+        "selfieOverlayColor":{"R":0,"G":0,"B":0,"A":0.65},
+        "textFont":"Inter-Bold",
+        "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+        "textSize":20,
+        "textFont-accepted":"Inter-Bold",
+        "textColor-accepted":{"R":255,"G":255,"B":255,"A":1.0},
+        "textSize-accepted":35,
+        "action_icons":{
+            "icon_accept": {
+                "icon_name":"preview-accept",
+            },
+            "icon_accept_pressed": {
+                "icon_name":"preview-accept-pressed",
+            },
+            "icon_reject": {
+                "icon_name":"preview-reject",
+            },
+            "icon_reject_pressed": {
+                "icon_name":"preview-reject-pressed",
+            }
+        }
+    },
+    "dialog_alert":{
+        "barcode_notfound_alert":{
+            "backgroundColor":{"R":223,"G":22,"B":66,"A":1.0},
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize":11,
+            "buttonBorderColor": {"R":255,"G":255,"B":255,"A":1.0},
+            "buttonTextFont": "Inter-SemiBold",
+            "buttonTextSize": 11,
+        },
+        "capture_warning_alert":{
+            "backgroundColor":{"R":255,"G":187,"B":56,"A":1.0},
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize":14,
+        },
+        "keep_steady_alert":{
+            "backgroundColor":{"R":255,"G":105,"B":0,"A":1.0},
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize":14,
+        },
+        "autoCapture_manual_alert":{
+            "backgroundColor":{"R":223,"G":22,"B":66,"A":1.0},
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize":14,
+        },
+        "blink_warning_alert":{
+            "backgroundColor":{"R":25,"G":154,"B":251,"A":1.0},
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "textFont":"Inter-Regular",
+            "textSize":14,
+        },
+    },
+    "showSocureLogo":"true"
+}
