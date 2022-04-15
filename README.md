@@ -1,6 +1,4 @@
-# iOS SDK
-
-# Version: 2.1.3 - Release Date : Mar 2022
+# Document Verification iOS SDK
 
 The Socure Document Verification SDK provides a framework to add image capture and upload services to your mobile application.
 
