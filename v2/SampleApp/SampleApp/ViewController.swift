@@ -75,7 +75,7 @@ class ViewController: UIViewController {
                     self.present(viewController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title:
-                                "Permission Error", message: "This application requires access to the camera to fuction. Please grant camera permission for the application", preferredStyle: .alert)
+                                "Permission Error", message: "This application requires access to the camera to function. Please grant camera permission for the application", preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                                 
                                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
@@ -101,7 +101,7 @@ class ViewController: UIViewController {
                     self.present(viewController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title:
-                                "Permission Error", message: "This application requires access to the camera to fuction. Please grant camera permission for the application", preferredStyle: .alert)
+                                "Permission Error", message: "This application requires access to the camera to function. Please grant camera permission for the application", preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                                 
                                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
                     self.present(viewController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title:
-                                "Permission Error", message: "This application requires access to the camera to fuction. Please grant camera permission for the application", preferredStyle: .alert)
+                                "Permission Error", message: "This application requires access to the camera to function. Please grant camera permission for the application", preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                                 
                                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
