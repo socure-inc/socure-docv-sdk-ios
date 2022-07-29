@@ -1,46 +1,35 @@
-# Document Verification iOS SDK
+# Predictive DocV iOS SDK v3
 
-The Document Verification iOS SDK provides a framework to add image capture and upload services to your mobile application.
+The Predictive Document Verification iOS SDK v3 provides a framework to add image capture and upload services to your mobile application.
 
 ## Minimum requirements
 
+| IDE   | Minimum requirements |
+|-------|----------------------|
+| XCode | 13+                  |
+
 | Feature                           | Minimum Requirements |
 | --------------------------------- | -------------------- |
-| Document and Selfie Capture       | iOS 12 and above     |
-| Barcode Data Extraction on Device | iOS 12 and above     |
-| MRZ Data Extraction on Device     | iOS 13 and above     |
-
-| IDE   | Minimum Requirements |
-| ----- | -------------------- |
-| XCode | 11.4+                |
-
-**Note:** Contact Technical Support if you compile with an earlier XCode version.
+| Document and Selfie Capture       | iOS 13 and later     |
+| Barcode Data Extraction on Device | iOS 13 and later     |
+| MRZ Data Extraction on Device     | iOS 13 and later     |
 
 ## Installation
 
-You can manually download and install the Document Verification iOS SDK; however for ease and accuracy, we strongly recommend that you use the CocoaPods utility.
-
-### Install the DocV iOS SDK through CocoaPods
-
-To install the DocV iOS SDK, add the following to your podfile:
+Install the DocV iOS SDK using CocoaPods by adding the following to your Podfile:
 
 ```
-# Pods for SocureSdkDemo
-    pod 'SocureSdk', :git => 'https://github.com/socure-inc/socure-docv-sdk-ios'
-
+pod 'SocureDocV'
 ```
 
-After you install the DocV iOS SDK, be sure to update your pods from the terminal:
+Install the Pod from the terminal:
 
 ```
 pod install
 ```
 
-**Note:** Close the project and open the xcworkspace file in the project after you update the pods in order to rebuild the project.
+**Note**: You must close the project and open the `xcworkspace` file after you install the pod for it to properly reflect in your project.
 
-## Configuration and Usage 
+## Configuration and integration
 
-For instructions on how to configure the SDK, see the [iOS SDK Documentation](https://developer.socure.com/guide/iossdk) on DevHub.
-
-
-
+For instructions on how to configure the SDK, see the [iOS SDK documentation](https://developer.socure.com/docs/sdks/docv/ios-sdk/ios-sdk-v3/) on DevHub.
