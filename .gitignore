@@ -1,6 +1,7 @@
 # Mac OS X
 .DS_Store
 .SPM/
+.swiftpm/
 
 # Xcode
 
