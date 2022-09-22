@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SocureSdk"
-  s.version          = "2.1.3"
+  s.version          = "2.1.4"
   s.summary          = "Socure Document Verification SDK, iOS Version."
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Socure Document Verification SDK, iOS Version.
 
   s.vendored_frameworks = "v2/Framework/SocureSdk.xcframework"
   s.preserve_paths = "v2/Framework/SocureSdk.xcframework"
-  
+
   s.ios.frameworks = 'UIKit'
   s.dependency 'TrustKit'
 
