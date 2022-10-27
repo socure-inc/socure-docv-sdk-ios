@@ -1,6 +1,6 @@
 //
 //  SelfieModalViewController.swift
-// SampleApp
+//  BareBonesDemo2
 //
 //  Created by Nicolas Dedual on 8/7/20.
 //  Copyright © 2020 Socure Inc. All rights reserved.
@@ -18,7 +18,9 @@ class SelfieModalViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemYellow
         // Do any additional setup after loading the view.
-        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         self.selfieScanner.initiateSelfieScan(ImageCallback: self)
     }
 }
@@ -51,7 +53,7 @@ extension SelfieModalViewController:ImageCallback {
     
     func onError(errorType: SocureSDKErrorType, errorMessage: String) {
         print(errorType)
-        print(errorMessage)
+        self.dismiss(animated: true, completion: nil)
     }
     
 

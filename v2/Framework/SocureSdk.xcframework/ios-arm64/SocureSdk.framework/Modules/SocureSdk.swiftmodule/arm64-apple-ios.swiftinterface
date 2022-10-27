@@ -15,6 +15,7 @@ import Metal
 import MetalKit
 import MetalPerformanceShaders
 import QuartzCore
+import SafariServices
 import Swift
 import SwiftUI
 import SystemConfiguration

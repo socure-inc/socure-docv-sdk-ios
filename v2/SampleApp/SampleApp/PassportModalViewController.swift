@@ -1,6 +1,6 @@
 //
 //  ModalViewController.swift
-// SampleApp
+//  BareBonesDemo2
 //
 //  Created by Nicolas Dedual on 7/24/20.
 //  Copyright © 2020 Socure Inc. All rights reserved.
@@ -18,9 +18,12 @@ class PassportModalViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemGreen
         // Do any additional setup after loading the view.
-        self.d​ocScanner​.initiatePassportScan(ImageCallback: self, MRZCallback: self)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.d​ocScanner​.initiatePassportScan(ImageCallback: self, MRZCallback: self)
+    }
 }
 extension PassportModalViewController: ImageCallback  {
     func documentFrontCallBack(docScanResult: DocScanResult) {
@@ -28,12 +31,17 @@ extension PassportModalViewController: ImageCallback  {
             let image = UIImage.init(data: imageData) else {
                 return
         }
-        print("documentFrontCallBack: CaptureType:\(docScanResult.captureType ?? -1) dataExtracted: \(docScanResult.dataExtracted ?? false)")
+        print("documentFrontCallBack")
+        print(docScanResult.metaData)
+        print(docScanResult.dataExtracted)
+        print(docScanResult.captureType)
 
         referenceViewController?.frontDocumentData = imageData
         referenceViewController?.frontImageView.image = image
-        
         if(referenceViewController?.frontDocumentData != nil) {
+            referenceViewController?.backDocumentData = nil
+            referenceViewController?.backImageView.image = nil
+            referenceViewController?.isPassport = true
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -51,8 +59,8 @@ extension PassportModalViewController: ImageCallback  {
     
     func onError(errorType: SocureSDKErrorType, errorMessage: String) {
         print(errorType)
-        print(errorMessage)
-    }
+      //  self.dismiss(animated: true, completion: nil)
+   }
     
 
 }
