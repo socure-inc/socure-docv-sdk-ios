@@ -717,9 +717,8 @@ public struct ConstraintLayoutGuideDSL : SocureSdk.ConstraintAttributesDSL {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers open class ImageUploader : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class ImageUploader : ObjectiveC.NSObject {
   public var socurePublicKey: Swift.String?
-  public init(_ clientApiKey: Swift.String)
   @objc convenience override dynamic public init()
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, back: Foundation.Data, selfie: Foundation.Data)
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, back: Foundation.Data)
@@ -775,6 +774,7 @@ public enum DocumentTypes : Swift.Int {
     get
     set
   }
+  open func setSocurePublicKey(publicKey: Swift.String)
   open func initiateLicenseScan<T>(ImageCallback: T, BarcodeCallback: SocureSdk.BarcodeCallback? = nil, MRZCallback: SocureSdk.MRZCallback? = nil) where T : UIKit.UIViewController, T : SocureSdk.ImageCallback
   open func initiateLicenseFrontScan<T>(ImageCallback: T) where T : UIKit.UIViewController, T : SocureSdk.ImageCallback
   open func initiateLicenseBackScan<T>(ImageCallback: T, BarcodeCallback: SocureSdk.BarcodeCallback, MRZCallback: SocureSdk.MRZCallback? = nil) where T : UIKit.UIViewController, T : SocureSdk.ImageCallback
