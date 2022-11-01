@@ -53,6 +53,7 @@ extension SelfieModalViewController:ImageCallback {
     
     func onError(errorType: SocureSDKErrorType, errorMessage: String) {
         print(errorType)
+        print(errorMessage)
         self.dismiss(animated: true, completion: nil)
     }
     
