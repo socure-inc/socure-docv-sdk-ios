@@ -31,7 +31,8 @@ class UploadViewController: UIViewController {
     @IBOutlet weak var closeButton:UIButton?
     
     let imgUpload = ImageUploader()
-   // let imgUpload1 = ImageUploader("asdfdafdasfasdfdasfs")
+    //The following method is deprecated
+   //let imgUpload1 = ImageUploader("asdfdafdasfasdfdasfs")
     
     var uplaodResult: UploadResult?
     var isWithSeflie = false
