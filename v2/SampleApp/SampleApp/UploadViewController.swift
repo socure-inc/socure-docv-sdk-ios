@@ -83,33 +83,6 @@ class UploadViewController: UIViewController {
             uploadButton?.isHidden = true
         }
     }
-    /*{
-        if uplaodResult != nil {
-            self.imgUpload.uploadSelfie(UploadCallback: self, docUploadResult: uplaodResult!, docUploadType: self.isPassport ? .Passport: .LicenseFront, selfie: self.selfieImageData!)
-            resultsTextView?.isHidden = true
-            resultsLabel?.isHidden = false
-            activityIndicator?.isHidden = false
-            activityIndicator?.startAnimating()
-        } else {
-        if let front = frontImageData,
-            let selfie = selfieImageData {
-            if isPassport {
-                //imgUpload.uploadPassport(UploadCallback: self, front: front)
-                imgUpload.uploadPassport(UploadCallback: self, front: front, selfie: selfie)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            } else if let back = backImageData {
-                //imgUpload.uploadLicense(UploadCallback: self, front: front)
-                //imgUpload.uploadLicense(UploadCallback: self, front: front, back: back)
-                imgUpload.uploadLicense(UploadCallback: self, front: front, back: back, selfie: selfie)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            }
-        }
-        }
-    }*/
     
     @IBAction func withSelfie(_ sender: UIButton) {
         if let front = frontImageData,
