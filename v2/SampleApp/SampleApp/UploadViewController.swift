@@ -24,18 +24,12 @@ class UploadViewController: UIViewController {
     var selfieImageData:Data?
     var isPassport = false
     
-    @IBOutlet weak var uploadButton:UIButton?
     @IBOutlet weak var resultsTextView:UITextView?
     @IBOutlet weak var activityIndicator:UIActivityIndicatorView?
     
     @IBOutlet weak var closeButton:UIButton?
     
     let imgUpload = ImageUploader()
-    //The following method is deprecated
-   //let imgUpload1 = ImageUploader("asdfdafdasfasdfdasfs")
-    
-    var uplaodResult: UploadResult?
-    var isWithSeflie = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,33 +55,11 @@ class UploadViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        uploadButton?.isEnabled = false
-        if let _ = frontImageData,
-            let _ = selfieImageData {
-            if isPassport || backImageData != nil {
-                uploadButton?.isEnabled = true
-            }
-        } else {
-            uploadButton?.isEnabled = false
-        }
-    }
-    
-    @IBAction func uploadDocument(sender:UIButton) {
-        if uplaodResult != nil {
-            self.imgUpload.uploadSelfie(UploadCallback: self, docUploadResult: uplaodResult!, docUploadType: self.isPassport ? .Passport: .LicenseFront, selfie: self.selfieImageData!)
-            resultsTextView?.isHidden = true
-            resultsLabel?.isHidden = false
-            activityIndicator?.isHidden = false
-            activityIndicator?.startAnimating()
-        } else {
-            uploadButton?.isHidden = true
-        }
     }
     
     @IBAction func withSelfie(_ sender: UIButton) {
         if let front = frontImageData,
            let selfie = selfieImageData {
-            isWithSeflie = true
             if isPassport {
                 imgUpload.uploadPassport(UploadCallback: self, front: front, selfie: selfie)
                 resultsLabel?.isHidden = false
@@ -132,23 +104,10 @@ class UploadViewController: UIViewController {
 extension UploadViewController: UploadCallback {
     
     func documentUploadFinished(uploadResult: UploadResult) {
-        if uplaodResult == nil {
             resultsTextView?.text = "UUID is: " + (uploadResult.uuid ?? "") + "\n"
             resultsTextView?.isHidden = false
             activityIndicator?.isHidden = true
             activityIndicator?.stopAnimating()
-            if !isWithSeflie && selfieImageData != nil {
-                uplaodResult = uploadResult
-                uploadButton?.isHidden = false
-            }
-        } else {
-            uplaodResult = nil
-            uploadButton?.isHidden = true
-            resultsTextView?.text = "Upload done UUID is: " + (uploadResult.uuid ?? "") + "\n"
-            resultsTextView?.isHidden = false
-            activityIndicator?.isHidden = true
-            activityIndicator?.stopAnimating()
-        }
     }
     
     func onUploadError(errorType: SocureSDKErrorType, errorMessage: String) {

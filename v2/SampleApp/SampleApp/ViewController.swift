@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*Incase user not setting the public key in Info.plist, the below method need to be invoked before initiating the scan*/
+        SDKAppDataPublic.setPublicKey("REPLACE ME")
         // Do any additional setup after loading the view.
     }
     

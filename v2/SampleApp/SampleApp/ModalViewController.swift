@@ -18,7 +18,6 @@ class ModalViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemBlue
         /*Now user can set the key via the following method instead of plist, it will override the key set in the plist*/
-        d​ocScanner​.setSocurePublicKey(publicKey: "replace_me")
         // Do any additional setup after loading the view.
     }
 
