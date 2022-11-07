@@ -405,7 +405,7 @@ SWIFT_CLASS("_TtC9SocureSdk13FormattedDate")
 
 SWIFT_CLASS("_TtC9SocureSdk13ImageUploader")
 @interface ImageUploader : NSObject
-- (nonnull instancetype)init;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -993,7 +993,7 @@ SWIFT_CLASS("_TtC9SocureSdk13FormattedDate")
 
 SWIFT_CLASS("_TtC9SocureSdk13ImageUploader")
 @interface ImageUploader : NSObject
-- (nonnull instancetype)init;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

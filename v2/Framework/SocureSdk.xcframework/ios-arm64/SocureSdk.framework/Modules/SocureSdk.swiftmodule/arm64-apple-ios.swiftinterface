@@ -717,15 +717,13 @@ public struct ConstraintLayoutGuideDSL : SocureSdk.ConstraintAttributesDSL {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class ImageUploader : ObjectiveC.NSObject {
-  public var socurePublicKey: Swift.String?
-  @objc convenience override dynamic public init()
+@objc @_inheritsConvenienceInitializers open class ImageUploader : ObjectiveC.NSObject {
+  @objc override dynamic public init()
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, back: Foundation.Data, selfie: Foundation.Data)
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, back: Foundation.Data)
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data)
   public func uploadPassport(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, selfie: Foundation.Data)
   public func uploadPassport(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data)
-  public func uploadSelfie(UploadCallback: SocureSdk.UploadCallback, docUploadResult: SocureSdk.UploadResult, docUploadType: SocureSdk.DocumentTypes, selfie: Foundation.Data)
   @objc deinit
 }
 public enum HairColor : Swift.String {
@@ -757,6 +755,10 @@ public enum DocumentTypes : Swift.Int {
     get
   }
 }
+@_hasMissingDesignatedInitializers final public class SDKAppDataPublic {
+  public static func setPublicKey(_ publicKey: Swift.String)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers open class DocumentScanner : ObjectiveC.NSObject {
   weak open var barCodeCallBackDelegate: SocureSdk.BarcodeCallback?
   public var scanMode: SocureSdk.DocumentTypes! {
@@ -774,7 +776,6 @@ public enum DocumentTypes : Swift.Int {
     get
     set
   }
-  open func setSocurePublicKey(publicKey: Swift.String)
   open func initiateLicenseScan<T>(ImageCallback: T, BarcodeCallback: SocureSdk.BarcodeCallback? = nil, MRZCallback: SocureSdk.MRZCallback? = nil) where T : UIKit.UIViewController, T : SocureSdk.ImageCallback
   open func initiateLicenseFrontScan<T>(ImageCallback: T) where T : UIKit.UIViewController, T : SocureSdk.ImageCallback
   open func initiateLicenseBackScan<T>(ImageCallback: T, BarcodeCallback: SocureSdk.BarcodeCallback, MRZCallback: SocureSdk.MRZCallback? = nil) where T : UIKit.UIViewController, T : SocureSdk.ImageCallback
