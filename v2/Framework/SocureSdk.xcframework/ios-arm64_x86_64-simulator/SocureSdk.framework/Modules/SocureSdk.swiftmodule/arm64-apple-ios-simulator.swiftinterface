@@ -387,11 +387,11 @@ final public class DefaultTextProvider : SocureSdk.AnimationTextProvider {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SelfieScannerViewController : UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) weak public var imageCallbackDelegate: SocureSdk.ImageCallback?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public var turnTorchOn: Swift.Bool {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public init(ImageCallback: SocureSdk.ImageCallback)
   @objc deinit
   @_Concurrency.MainActor(unsafe) public class func requestCameraPermissions(requestStatus: @escaping (Swift.Bool) -> Swift.Void)
@@ -1749,6 +1749,7 @@ public enum FieldKey : Swift.String, Swift.Equatable {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public init(ImageCallback: SocureSdk.ImageCallback, BarcodeCallback: SocureSdk.BarcodeCallback? = nil, MRZCallback: SocureSdk.MRZCallback? = nil, mode: SocureSdk.DocumentTypes = .LicenseFront, scanOnlyOneType: Swift.Bool = false)
   @objc deinit
   @_Concurrency.MainActor(unsafe) public func manualCapture()
