@@ -756,7 +756,7 @@ public enum DocumentTypes : Swift.Int {
   }
 }
 @_hasMissingDesignatedInitializers final public class SDKAppDataPublic {
-  public static func setPublicKey(_ publicKey: Swift.String)
+  public static func setSocureSdkKey(_ publicKey: Swift.String)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class DocumentScanner : ObjectiveC.NSObject {

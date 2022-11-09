@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GLDY179722MB1wyN+XebvtQWk1U=
+		d+N5KODpXQK7qZg9dci+z4ygFSg=
 		</data>
 		<key>Inter-Bold.ttf</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		W2MKQDYZkBBh/icF95vOJUF4pp0=
+		zclWM+xDy64h3mrg+hpFB1JLIuE=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pIk8jU7JmvmO/bzjwsq5+KENe3U=
+		E9tUyjD9fAnroCcti7Ttp+CK7OA=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SZx60rlk+vdWRTtHYpF3UETVsHo=
+		ziRZljGD7AZQiOwSfPqlEySCGHk=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TjP9YnhZOoxSCydJEK6dqYJaeiw=
+		A7sk0HVhwgmJFeB5VRSfwXUHGY8=
 		</data>
 		<key>OpenSans-Bold.ttf</key>
 		<data>
@@ -190,14 +190,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kQy3wAvp84WChDH/AtBY5EErP+umH0l4sufpRwUqGbw=
+			U89ga7XULSisJOKVSc6weO7XYF/HHwKXs9nI9WcpNQU=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+bf9mptaqXQXHADPRM3x5xYbCoNx1s5HiPJVxkx0+Kk=
+			6TBAJATYHGws4OMePuJ7jErMnY/tGh1Y2ixSo0gA+kg=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -211,14 +211,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zR3j3pUiMjH+IjrI3fEW/t/b0HfKMN3WXl8+k2az+FY=
+			19kjwyepMml5kcE/aO6TE2r2qxiOVviTySpclWmDycc=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4M3HKB9oRtCOBU1DYTonmrP8zGLcSaZqJtzTleNKKj4=
+			n2VQcHWEDifsDBWnpw9RcD73V/oJXJCe2gEdl205wFw=
 			</data>
 		</dict>
 		<key>OpenSans-Bold.ttf</key>
