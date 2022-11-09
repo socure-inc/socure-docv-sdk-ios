@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BareBonesDemo
+// SampleApp
 //
 //  Created by Nicolas Dedual on 2/27/20.
 //  Copyright © 2020 Socure Inc. All rights reserved.
@@ -31,16 +31,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*Incase user not setting the public key in Info.plist, the below method need to be invoked before initiating the scan*/
-        SDKAppDataPublic.setSocureSdkKey("REPLACE_ME")
         // Do any additional setup after loading the view.
+        //SDKAppDataPublic.setSocureSdkKey("REPLACE_ME") /*Incase of not setting the public key in plist*/
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         if frontDocumentData != nil &&
-        (backDocumentData != nil || isPassport) &&
+            (backDocumentData != nil || isPassport) &&
             selfieData != nil {
             uploadButton.isEnabled = true
             uploadButton.backgroundColor = UIColor.systemRed
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if frontDocumentData != nil &&
-            (backDocumentData != nil || isPassport) &&
+        (backDocumentData != nil || isPassport) &&
             selfieData != nil {
                 uploadButton.isEnabled = true
                 uploadButton.backgroundColor = UIColor.systemRed
@@ -65,17 +64,19 @@ class ViewController: UIViewController {
     }
         
     @IBAction func didCaptureButton(sender:UIButton) {
+        
         DocumentScanner.requestCameraPermissions { (permissionsGranted) in
             DispatchQueue.main.async {
                 
                 if (permissionsGranted) {
+                    self.isPassport = false
                     let viewController = ModalViewController()
                     viewController.modalPresentationStyle = .fullScreen
                     viewController.referenceViewController = self
                     self.present(viewController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title:
-                                "Permission Error", message: "This application requires access to the camera to fuction. Please grant camera permission for the application", preferredStyle: .alert)
+                                "Permission Error", message: "This application requires access to the camera to function. Please grant camera permission for the application", preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                                 
                                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
@@ -89,17 +90,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didCapturePassport(sender:UIButton) {
+        
         DocumentScanner.requestCameraPermissions { (permissionsGranted) in
             DispatchQueue.main.async {
                 
                 if (permissionsGranted) {
+                    self.isPassport = true
                     let viewController = PassportModalViewController()
                     viewController.modalPresentationStyle = .fullScreen
                     viewController.referenceViewController = self
                     self.present(viewController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title:
-                                "Permission Error", message: "This application requires access to the camera to fuction. Please grant camera permission for the application", preferredStyle: .alert)
+                                "Permission Error", message: "This application requires access to the camera to function. Please grant camera permission for the application", preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                                 
                                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
@@ -125,7 +128,7 @@ class ViewController: UIViewController {
                     self.present(viewController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title:
-                                "Permission Error", message: "This application requires access to the camera to fuction. Please grant camera permission for the application", preferredStyle: .alert)
+                                "Permission Error", message: "This application requires access to the camera to function. Please grant camera permission for the application", preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                                 
                                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
@@ -146,7 +149,7 @@ class ViewController: UIViewController {
             viewController.frontImageData = frontDocumentData
             viewController.backImageData = backDocumentData
             viewController.selfieImageData = selfieData
-            viewController.isPassport = isPassport
+            
             self.present(viewController, animated: true, completion: nil)
         }
     }

@@ -1,6 +1,6 @@
 //
 //  ModalViewController.swift
-//  BareBonesDemo2
+// SampleApp
 //
 //  Created by Nicolas Dedual on 7/24/20.
 //  Copyright © 2020 Socure Inc. All rights reserved.
@@ -17,14 +17,10 @@ class ModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemBlue
-        /*Now user can set the key via the following method instead of plist, it will override the key set in the plist*/
         // Do any additional setup after loading the view.
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         self.d​ocScanner​.initiateLicenseScan(ImageCallback: self, BarcodeCallback: self)
     }
+
 }
 extension ModalViewController: ImageCallback  {
     func documentFrontCallBack(docScanResult: DocScanResult) {
@@ -32,15 +28,14 @@ extension ModalViewController: ImageCallback  {
             let image = UIImage.init(data: imageData) else {
                 return
         }
-        print("documentFrontCallBack")
-        print(docScanResult.metaData)
-        print(docScanResult.dataExtracted)
-        print(docScanResult.captureType)
+        print("documentFrontCallBack: CaptureType:\(docScanResult.captureType ?? -1)")
         referenceViewController?.frontDocumentData = imageData
         referenceViewController?.frontImageView.image = image
-        referenceViewController?.isPassport = false
-        referenceViewController?.backDocumentData = nil
-        referenceViewController?.backImageView.image = nil
+        
+        if( referenceViewController?.backDocumentData != nil &&
+                   referenceViewController?.frontDocumentData != nil) {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func documentBackCallBack(docScanResult: DocScanResult) {
@@ -48,11 +43,7 @@ extension ModalViewController: ImageCallback  {
             let image = UIImage.init(data: imageData) else {
                 return
         }
-        print("documentBackCallBack")
-        print(docScanResult.metaData)
-        print(docScanResult.dataExtracted)
-        print(docScanResult.captureType)
-
+        print("documentBackCallBack: CaptureType:\(docScanResult.captureType ?? -1) dataExtracted: \(docScanResult.dataExtracted ?? false)")
         referenceViewController?.backDocumentData = imageData
         referenceViewController?.backImageView.image = image
         
@@ -63,8 +54,7 @@ extension ModalViewController: ImageCallback  {
     }
     
     func selfieCallBack(selfieScanResult: SelfieScanResult) {
-        print("documentBackCallBack")
-        print(selfieScanResult.metaData)
+        
     }
     
     func onScanCancelled() {
@@ -74,7 +64,6 @@ extension ModalViewController: ImageCallback  {
     func onError(errorType: SocureSDKErrorType, errorMessage: String) {
         print(errorType)
         print(errorMessage)
-      //  self.dismiss(animated: true, completion: nil)
     }
     
 

@@ -1,6 +1,6 @@
 //
 //  UploadViewController.swift
-//  BareBonesDemo2
+// SampleApp
 //
 //  Created by Nicolas Dedual on 8/10/20.
 //  Copyright © 2020 Socure Inc. All rights reserved.
@@ -22,8 +22,8 @@ class UploadViewController: UIViewController {
     var frontImageData:Data?
     var backImageData:Data?
     var selfieImageData:Data?
-    var isPassport = false
     
+    @IBOutlet weak var uploadButton:UIButton?
     @IBOutlet weak var resultsTextView:UITextView?
     @IBOutlet weak var activityIndicator:UIActivityIndicatorView?
     
@@ -40,62 +40,41 @@ class UploadViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let front = frontImageData {
-            
-            frontImageView?.image = UIImage.init(data: front)
+        if let front = frontImageData,
+        let selfie = selfieImageData {
             if let back = backImageData {
                 backImageView?.image = UIImage.init(data: back)
             }
-            if  let selfie = selfieImageData {
+            frontImageView?.image = UIImage.init(data: front)
             selfieImageView?.image = UIImage.init(data: selfie)
-            }
         }
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        uploadButton?.isEnabled = true
     }
     
-    @IBAction func withSelfie(_ sender: UIButton) {
+    @IBAction func uploadDocument(sender:UIButton) {
+        
         if let front = frontImageData,
-           let selfie = selfieImageData {
-            if isPassport {
-                imgUpload.uploadPassport(UploadCallback: self, front: front, selfie: selfie)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            } else if let back = backImageData {
-                imgUpload.uploadLicense(UploadCallback: self, front: front, back: back, selfie: selfie)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            }
+            let back = backImageData,
+            let selfie = selfieImageData {
+            
+            imgUpload.uploadLicense(UploadCallback: self, front: front, back: back, selfie: selfie)
+            resultsLabel?.isHidden = false
+            activityIndicator?.isHidden = false
+            activityIndicator?.startAnimating()
+        } else if let front = frontImageData,
+                  let selfie = selfieImageData {
+                  
+                  imgUpload.uploadPassport(UploadCallback: self, front: front, selfie: selfie)
+                  resultsLabel?.isHidden = false
+                  activityIndicator?.isHidden = false
+                  activityIndicator?.startAnimating()
         }
     }
-    
-    @IBAction func withOutSelfie(_ sender: Any) {
-        if let front = frontImageData {
-            if isPassport {
-                imgUpload.uploadPassport(UploadCallback: self, front: front)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            } else if let back = backImageData {
-                //imgUpload.uploadLicense(UploadCallback: self, front: front)
-                imgUpload.uploadLicense(UploadCallback: self, front: front, back: back)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            } else {
-                imgUpload.uploadLicense(UploadCallback: self, front: front)
-                resultsLabel?.isHidden = false
-                activityIndicator?.isHidden = false
-                activityIndicator?.startAnimating()
-            }
-        }
-    }
-    
     
     @IBAction func closePressed(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -104,19 +83,19 @@ class UploadViewController: UIViewController {
 extension UploadViewController: UploadCallback {
     
     func documentUploadFinished(uploadResult: UploadResult) {
-            resultsTextView?.text = "UUID is: " + (uploadResult.uuid ?? "") + "\n"
-            resultsTextView?.isHidden = false
-            activityIndicator?.isHidden = true
-            activityIndicator?.stopAnimating()
+        resultsTextView?.text = "UUID is: " + (uploadResult.uuid ?? "") + "\n"
+        resultsTextView?.isHidden = false
+        activityIndicator?.isHidden = true
+        activityIndicator?.stopAnimating()
+
     }
     
     func onUploadError(errorType: SocureSDKErrorType, errorMessage: String) {
-        DispatchQueue.main.async {
-            self.resultsTextView?.text = "Upload failed with error: " + errorMessage
-            self.resultsTextView?.isHidden = false
-            self.activityIndicator?.isHidden = true
-            self.activityIndicator?.stopAnimating()
-        }
+        resultsTextView?.text = "Upload failed with error: " + errorMessage
+        resultsTextView?.isHidden = false
+        activityIndicator?.isHidden = true
+        activityIndicator?.stopAnimating()
+
     }
     
 }
