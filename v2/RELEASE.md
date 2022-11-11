@@ -1,6 +1,25 @@
 # Release Notes
 
-The Socure Document Verification iOS SDK provides a framework to add image capture and upload services to your mobile application.
+The Predictive Document Verification iOS SDK provides a framework to add image capture and upload services to your mobile application.
+
+## 2.2.0
+
+# Enhancements
+
+- Added a notice and consent feature that is displayed prior to the initiation of the document capture and upload process on the Capture App. The consumer must either click **I Agree** to provide consent and begin the document capture flow, or **I Decline** to decline consent and cancel the transaction. If the consumer declines to provide consent, the document capture flow is terminated and the Socure DocV SDK returns an error.
+- Removed mandatory requirement to set the public key in `info.plist`. The user can either set the public key in `info.plist` or call the following method  to set the key: 
+      `func setSocureSdkKey(_ publicKey: String)`
+- Deprecated `Imageuploader(_ clientApiKey:String)`. The public key can now be configured using the new method or using `Info.plist`.  
+
+# Bug Fixes
+
+- None.
+
+# Known Issues
+
+- None.
+
+
 
 ## 2.1.4
 
