@@ -383,6 +383,7 @@ SWIFT_CLASS("_TtC9SocureSdk15DocumentScanner")
 
 SWIFT_CLASS("_TtC9SocureSdk29DocumentScannerViewController")
 @interface DocumentScannerViewController : UINavigationController
+- (void)viewDidLoad;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_UNAVAILABLE;
@@ -403,7 +404,7 @@ SWIFT_CLASS("_TtC9SocureSdk13FormattedDate")
 
 SWIFT_CLASS("_TtC9SocureSdk13ImageUploader")
 @interface ImageUploader : NSObject
-- (nonnull instancetype)init;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -542,6 +543,8 @@ SWIFT_CLASS("_TtC9SocureSdk21SocureSDKConfigurator")
 @interface SocureSDKConfigurator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

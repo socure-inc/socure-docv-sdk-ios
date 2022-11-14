@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SocureSdk-Swift.h</key>
 		<data>
-		hXbPYiTHRt9bV3lnkLslCUKhw54=
+		SUBWtu9NJg6cjuu0DRHhZRm8P6s=
 		</data>
 		<key>Headers/SocureSdk.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3fkPuMqKhqPfUrMKJCznOxT5cBQ=
+		VdHRIxdIxwZxbSZbXFU1k35tKkU=
 		</data>
 		<key>Inter-Bold.ttf</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RWefea7jSzxpExq7EPdZgz65odQ=
+		Y6o0TvbO0sleQgs0xjA9539d0sc=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n3Od6S/6YcUgaDccffgjTUDK7KE=
+		DsFS7u4P3142P393tY4t+3oQSaE=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PaqIPIcbZdgFr956CpNtquEnzDc=
+		D6wvpVHKcG64noohB10vmb2FAxU=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I4YnfmZ/ObzEXkJ2bmpxsay2OJo=
+		ntXHiml0Zosxib1xsTGBHSqf45E=
 		</data>
 		<key>OpenSans-Bold.ttf</key>
 		<data>
@@ -75,6 +75,26 @@
 		<key>Oxygen-Bold.ttf</key>
 		<data>
 		rT+KFILZYuuVmDDpLtj/toe8Yxw=
+		</data>
+		<key>ViewList.storyboardc/ConsentVC.nib/objects-13.0+.nib</key>
+		<data>
+		mUDrDIxaavTxzXBGOPTbo1Uferk=
+		</data>
+		<key>ViewList.storyboardc/ConsentVC.nib/runtime.nib</key>
+		<data>
+		mUDrDIxaavTxzXBGOPTbo1Uferk=
+		</data>
+		<key>ViewList.storyboardc/Info.plist</key>
+		<data>
+		69gSelEeGY6NyX7mbLXwLiOPWeo=
+		</data>
+		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-13.0+.nib</key>
+		<data>
+		/Ahgit6pycdKDLkwE9M15aBqGjY=
+		</data>
+		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<data>
+		bXstazGeGgH13JWLfeLVWP0vVh4=
 		</data>
 		<key>config.plist</key>
 		<data>
@@ -128,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			et9kBOaWRozDG9JV3Yc7fQ7weg9W4tIMbI9TRV19ifU=
+			lIOXyYg6LBo7ik/vEJvZgLpEyMKnPQ/A0c4BgNoCQXg=
 			</data>
 		</dict>
 		<key>Headers/SocureSdk.h</key>
@@ -170,14 +190,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WfPs6pzheGrlmRmcI5EHSj4tFQ8kNNWjpJ2oqnFZptU=
+			C9u3Z5cWB/IkCGZWXzYU/1qxruEtvQZmz7RT5TO04/I=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LaSWxnMQeNoc/JMDNLQBR1iqBanrDZRI786IUmfYEDs=
+			9Y/cyVYikSqJfOTxaDDHVJ2bGynOYcQaJlg6MQhevUg=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -191,14 +211,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RL/WjFX2AqIu3ziQqEkyrk31VfgP7dbNMOSBpPJO3zY=
+			3iIqJE+C3ZVwR/vEsuQd1iiWgIHjI1SqlLYt22DrEjY=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RofkTNc+ZoNdsapjtlFWD4His6o717yAZ4xvTYNRFZc=
+			icS9zNjnQY5/CbY+QXwHKaJlGLRXL2sAK7ZIHKMYXAw=
 			</data>
 		</dict>
 		<key>OpenSans-Bold.ttf</key>
@@ -220,6 +240,41 @@
 			<key>hash2</key>
 			<data>
 			2G2aEa0aokLb9Q0qKjKVuqsqETSdz221vSjjYDa39sA=
+			</data>
+		</dict>
+		<key>ViewList.storyboardc/ConsentVC.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k4lV6UZ5YHof5r35X9RpyBwc3MOWAr6/tgTsnyHJPRg=
+			</data>
+		</dict>
+		<key>ViewList.storyboardc/ConsentVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k4lV6UZ5YHof5r35X9RpyBwc3MOWAr6/tgTsnyHJPRg=
+			</data>
+		</dict>
+		<key>ViewList.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TxSMLpHFs3lt6JpheW0UOFsSiQsqJ2xbn6bNGUL3hdg=
+			</data>
+		</dict>
+		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TEYTYodP+UV9eo4M8xx64gaRxEuQv9HaZGEoJPcZUdI=
+			</data>
+		</dict>
+		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YHRA8zH7Gv/GgrwO48qFRNtcOK/2EDmMuXkCpgdhKvQ=
 			</data>
 		</dict>
 		<key>config.plist</key>

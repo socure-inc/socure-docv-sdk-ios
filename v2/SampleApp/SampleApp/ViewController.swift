@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //SDKAppDataPublic.setSocureSdkKey("REPLACE_ME") /*Incase of not setting the public key in plist*/
     }
     
     override func viewWillAppear(_ animated: Bool) {

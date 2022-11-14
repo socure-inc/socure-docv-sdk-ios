@@ -15,6 +15,7 @@ import Metal
 import MetalKit
 import MetalPerformanceShaders
 import QuartzCore
+import SafariServices
 import Swift
 import SwiftUI
 import SystemConfiguration
@@ -386,11 +387,11 @@ final public class DefaultTextProvider : SocureSdk.AnimationTextProvider {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SelfieScannerViewController : UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) weak public var imageCallbackDelegate: SocureSdk.ImageCallback?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public var turnTorchOn: Swift.Bool {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public init(ImageCallback: SocureSdk.ImageCallback)
   @objc deinit
   @_Concurrency.MainActor(unsafe) public class func requestCameraPermissions(requestStatus: @escaping (Swift.Bool) -> Swift.Void)
@@ -717,15 +718,12 @@ public struct ConstraintLayoutGuideDSL : SocureSdk.ConstraintAttributesDSL {
   }
 }
 @objc @_inheritsConvenienceInitializers open class ImageUploader : ObjectiveC.NSObject {
-  public var socurePublicKey: Swift.String?
-  public init(_ clientApiKey: Swift.String)
-  @objc convenience override dynamic public init()
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, back: Foundation.Data, selfie: Foundation.Data)
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, back: Foundation.Data)
   public func uploadLicense(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data)
   public func uploadPassport(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data, selfie: Foundation.Data)
   public func uploadPassport(UploadCallback: SocureSdk.UploadCallback, front: Foundation.Data)
-  public func uploadSelfie(UploadCallback: SocureSdk.UploadCallback, docUploadResult: SocureSdk.UploadResult, docUploadType: SocureSdk.DocumentTypes, selfie: Foundation.Data)
+  @objc override dynamic public init()
   @objc deinit
 }
 public enum HairColor : Swift.String {
@@ -756,6 +754,10 @@ public enum DocumentTypes : Swift.Int {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers final public class SDKAppDataPublic {
+  public static func setSocureSdkKey(_ publicKey: Swift.String)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class DocumentScanner : ObjectiveC.NSObject {
   weak open var barCodeCallBackDelegate: SocureSdk.BarcodeCallback?
@@ -1747,6 +1749,7 @@ public enum FieldKey : Swift.String, Swift.Equatable {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public init(ImageCallback: SocureSdk.ImageCallback, BarcodeCallback: SocureSdk.BarcodeCallback? = nil, MRZCallback: SocureSdk.MRZCallback? = nil, mode: SocureSdk.DocumentTypes = .LicenseFront, scanOnlyOneType: Swift.Bool = false)
   @objc deinit
   @_Concurrency.MainActor(unsafe) public func manualCapture()
