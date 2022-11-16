@@ -21,6 +21,22 @@
             "overlayColor":{"R":255,"G":255,"B":255,"A":1.0}
         }
     },
+    "consent": {
+        "accept_button":{
+            "borderColor":{"R":255,"G":105,"B":0,"A":1.0},
+            "textFont":"Inter-Bold",
+            "textSize":16,
+            "textColor":{"R":255,"G":255,"B":255,"A":1.0},
+            "backgroundColor":{"R":255,"G":105,"B":0,"A":1.0},
+        },
+        "decline_button":{
+            "borderColor":{"R":255,"G":105,"B":0,"A":1.0},
+            "textFont":"Inter-Bold",
+            "textSize":16,
+            "textColor":{"R":20,"G":27,"B":77,"A":1.0},
+            "backgroundColor":{"R":255,"G":255,"B":255,"A":1.0},
+        },
+    },
     "help":{
         "cornerRadius":20,
         "action_icons": {
