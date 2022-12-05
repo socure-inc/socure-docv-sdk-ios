@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SocureSdk-Swift.h</key>
 		<data>
-		SUBWtu9NJg6cjuu0DRHhZRm8P6s=
+		Ny9WKY1sklpOA0+H0slmuBTOM08=
 		</data>
 		<key>Headers/SocureSdk.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fXNvGRT9PrBsOXfHNxsMUWjtVCc=
+		WEzQQCOW3hsf+CGPN/d/zuYJgx8=
 		</data>
 		<key>Inter-Bold.ttf</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jIwIp7GhpzfRM9jH+SbS6pjaxGY=
+		SLnhbEzO4kEFE45oajYIq/lyU/A=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		25o4zPx7SIJOxgvBmmetPHi9gSo=
+		qgdo6nGUlol2vBt1ICius3IE6Bo=
 		</data>
 		<key>OpenSans-Bold.ttf</key>
 		<data>
@@ -78,23 +78,23 @@
 		</data>
 		<key>ViewList.storyboardc/ConsentVC.nib/objects-13.0+.nib</key>
 		<data>
-		mUDrDIxaavTxzXBGOPTbo1Uferk=
+		nbyM9Ro/7i7MQ6YJw/lY+KFYlyQ=
 		</data>
 		<key>ViewList.storyboardc/ConsentVC.nib/runtime.nib</key>
 		<data>
-		mUDrDIxaavTxzXBGOPTbo1Uferk=
+		nbyM9Ro/7i7MQ6YJw/lY+KFYlyQ=
 		</data>
 		<key>ViewList.storyboardc/Info.plist</key>
 		<data>
 		69gSelEeGY6NyX7mbLXwLiOPWeo=
 		</data>
-		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-13.0+.nib</key>
+		<key>ViewList.storyboardc/TRL-E4-4ZM-view-Bcr-30-cDM.nib/objects-13.0+.nib</key>
 		<data>
-		/Ahgit6pycdKDLkwE9M15aBqGjY=
+		4+B2QdflBX/BMXshBgP1aODxkU4=
 		</data>
-		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<key>ViewList.storyboardc/TRL-E4-4ZM-view-Bcr-30-cDM.nib/runtime.nib</key>
 		<data>
-		bXstazGeGgH13JWLfeLVWP0vVh4=
+		9i+z3e2/xovuALRNWcaY1wNPw8M=
 		</data>
 		<key>config.plist</key>
 		<data>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lIOXyYg6LBo7ik/vEJvZgLpEyMKnPQ/A0c4BgNoCQXg=
+			mnOjHfBJ+DN6Usw1hfOlHUmBvEO5Y3Kc20VUZ25odXI=
 			</data>
 		</dict>
 		<key>Headers/SocureSdk.h</key>
@@ -197,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qy1AGAqM2NOl01OlNOgI52Qj4W9a00I16b7RKR44ofM=
+			w/wTu9eAfxnFCtXtbCaQfO8ChUZYIILYzH+EgJK1v6Q=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -218,7 +218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nME6/jC91TFnOPvQhNQMlSZynrWRCkhAiHtpfWXLP4k=
+			njA4Kl5OY5frtBA01zxYXoS8G7Gz3L5q8mBvbgp+Q2g=
 			</data>
 		</dict>
 		<key>OpenSans-Bold.ttf</key>
@@ -246,14 +246,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k4lV6UZ5YHof5r35X9RpyBwc3MOWAr6/tgTsnyHJPRg=
+			iey9eOySX8MPMrMMCuAiVx/y00bPgHuDUBfXXAkuzTQ=
 			</data>
 		</dict>
 		<key>ViewList.storyboardc/ConsentVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k4lV6UZ5YHof5r35X9RpyBwc3MOWAr6/tgTsnyHJPRg=
+			iey9eOySX8MPMrMMCuAiVx/y00bPgHuDUBfXXAkuzTQ=
 			</data>
 		</dict>
 		<key>ViewList.storyboardc/Info.plist</key>
@@ -263,18 +263,18 @@
 			TxSMLpHFs3lt6JpheW0UOFsSiQsqJ2xbn6bNGUL3hdg=
 			</data>
 		</dict>
-		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-13.0+.nib</key>
+		<key>ViewList.storyboardc/TRL-E4-4ZM-view-Bcr-30-cDM.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TEYTYodP+UV9eo4M8xx64gaRxEuQv9HaZGEoJPcZUdI=
+			uDzZSHb6BgIqg1KdIpxsdyLSbohGgSirdXmRRUn2/rM=
 			</data>
 		</dict>
-		<key>ViewList.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<key>ViewList.storyboardc/TRL-E4-4ZM-view-Bcr-30-cDM.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YHRA8zH7Gv/GgrwO48qFRNtcOK/2EDmMuXkCpgdhKvQ=
+			4VVwn1w7pbtynw3zZn/mJanC7tuhhLkfRPheT3rs7x0=
 			</data>
 		</dict>
 		<key>config.plist</key>
