@@ -575,7 +575,6 @@ SWIFT_CLASS("_TtC9SocureSdk21SocureSDKConfigurator")
 
 
 
-
 SWIFT_CLASS("_TtC9SocureSdk12UploadResult")
 @interface UploadResult : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1134,7 +1133,6 @@ SWIFT_CLASS("_TtC9SocureSdk21SocureSDKConfigurator")
 @interface SocureSDKConfigurator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 
