@@ -2,6 +2,21 @@
 
 The Predictive Document Verification iOS SDK provides a framework to add image capture and upload services to your mobile application.
 
+## 2.2.2
+
+# Enhancements
+
+- None.
+
+# Bug Fixes
+
+- Corrected UI alignment issues for the Consent and Terms of Service screen.
+
+# Known Issues
+
+- None.
+
+
 ## 2.2.1
 
 # Enhancements
