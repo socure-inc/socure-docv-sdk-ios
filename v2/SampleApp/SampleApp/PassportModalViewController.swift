@@ -28,7 +28,7 @@ extension PassportModalViewController: ImageCallback  {
             let image = UIImage.init(data: imageData) else {
                 return
         }
-        print("documentFrontCallBack: CaptureType:\(docScanResult.captureType ?? -1) dataExtracted: \(docScanResult.dataExtracted ?? false)")
+        print("documentFrontCallBack: CaptureType:\(docScanResult.captureType ?? -1) dataExtracted: \(docScanResult.dataExtracted ?? false) sessionId: \(docScanResult.sessionId ?? "")")
 
         referenceViewController?.frontDocumentData = imageData
         referenceViewController?.frontImageView.image = image

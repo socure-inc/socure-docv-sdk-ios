@@ -15,7 +15,6 @@ class ConsentModalVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        referenceViewController?.setErrorValues("")
         self.view.backgroundColor = UIColor.systemBlue
         // Do any additional setup after loading the view.
     }
@@ -37,8 +36,7 @@ class ConsentModalVC: UIViewController {
 }
 extension ConsentModalVC: ConsentCallback {
     func consentResult(consentResult: ConsentResult) {
-        print("Consent Success")
-        print(consentResult)
+        print("Consent Success: \(consentResult.sessionId ?? "") \(consentResult.message ?? "")")
         self.dismiss(animated: true)
     }
     

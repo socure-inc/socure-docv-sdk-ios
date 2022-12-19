@@ -38,7 +38,7 @@ extension SelfieModalViewController:ImageCallback {
         }
         referenceViewController?.selfieData = imageData
         referenceViewController?.selfieImageView.image = image
-
+        print("selfieCallBack: sessionID: \(selfieScanResult.sessionId ?? "")")
         if( referenceViewController?.selfieData != nil) {
             self.dismiss(animated: true, completion: nil)
         }

@@ -87,7 +87,7 @@ extension UploadViewController: UploadCallback {
         resultsTextView?.isHidden = false
         activityIndicator?.isHidden = true
         activityIndicator?.stopAnimating()
-
+        print("uplaodUUID: \(uploadResult.uuid ?? "") sessionID: \(uploadResult.sessionId ?? "")")
     }
     
     func onUploadError(errorType: SocureSDKErrorType, errorMessage: String) {
