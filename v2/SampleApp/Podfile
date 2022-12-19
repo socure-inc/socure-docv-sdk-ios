@@ -5,5 +5,5 @@ target 'SampleApp' do
   use_frameworks!
 
   # Pods for SocureSdkDemo
-    pod 'SocureSdk', :git => 'https://github.com/socure-inc/socure-docv-sdk-ios'
+    pod 'SocureSdk', :git => 'https://github.com/socure-inc/socure-docv-sdk-ios', :branch => '2.3.0'
 end

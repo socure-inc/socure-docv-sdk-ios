@@ -366,6 +366,29 @@ SWIFT_CLASS("_TtC9SocureSdk23CompatibleAnimationView")
 @end
 
 
+SWIFT_CLASS("_TtC9SocureSdk13ConsentHelper")
+@interface ConsentHelper : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIViewController;
+
+SWIFT_CLASS("_TtC9SocureSdk27ConsentHelperViewController")
+@interface ConsentHelperViewController : UINavigationController
+- (void)viewDidLoad;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9SocureSdk13ConsentResult")
+@interface ConsentResult : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SocureSdk13DocScanResult")
 @interface DocScanResult : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -381,7 +404,6 @@ SWIFT_CLASS("_TtC9SocureSdk15DocumentScanner")
 
 
 
-@class UIViewController;
 
 SWIFT_CLASS("_TtC9SocureSdk29DocumentScannerViewController")
 @interface DocumentScannerViewController : UINavigationController
@@ -954,6 +976,29 @@ SWIFT_CLASS("_TtC9SocureSdk23CompatibleAnimationView")
 @end
 
 
+SWIFT_CLASS("_TtC9SocureSdk13ConsentHelper")
+@interface ConsentHelper : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIViewController;
+
+SWIFT_CLASS("_TtC9SocureSdk27ConsentHelperViewController")
+@interface ConsentHelperViewController : UINavigationController
+- (void)viewDidLoad;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9SocureSdk13ConsentResult")
+@interface ConsentResult : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SocureSdk13DocScanResult")
 @interface DocScanResult : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -969,7 +1014,6 @@ SWIFT_CLASS("_TtC9SocureSdk15DocumentScanner")
 
 
 
-@class UIViewController;
 
 SWIFT_CLASS("_TtC9SocureSdk29DocumentScannerViewController")
 @interface DocumentScannerViewController : UINavigationController

@@ -242,6 +242,7 @@ public protocol AnimationImageProvider {
 @objc @_inheritsConvenienceInitializers public class UploadResult : ObjectiveC.NSObject {
   public var referenceId: Swift.String?
   public var uuid: Swift.String?
+  public var sessionId: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -523,6 +524,13 @@ extension SocureSdk.LottieLoopMode : Swift.Equatable {
   public var captureType: Swift.Int!
   public var dataExtracted: Swift.Bool!
   public var metaData: [Swift.String : Any]
+  public var sessionId: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ConsentResult : ObjectiveC.NSObject {
+  public var sessionId: Swift.String!
+  public var message: Swift.String!
   @objc override dynamic public init()
   @objc deinit
 }
@@ -757,6 +765,11 @@ public enum DocumentTypes : Swift.Int {
 }
 @_hasMissingDesignatedInitializers final public class SDKAppDataPublic {
   public static func setSocureSdkKey(_ publicKey: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ConsentHelper : ObjectiveC.NSObject {
+  public func showConsent<T>(ConsentCallback: T) where T : UIKit.UIViewController, T : SocureSdk.ConsentCallback
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class DocumentScanner : ObjectiveC.NSObject {
@@ -1031,6 +1044,11 @@ public protocol ImageCallback : AnyObject {
   func selfieCallBack(selfieScanResult: SocureSdk.SelfieScanResult)
   func onScanCancelled()
   func onError(errorType: SocureSdk.SocureSDKErrorType, errorMessage: Swift.String)
+}
+public protocol ConsentCallback : AnyObject {
+  func consentResult(consentResult: SocureSdk.ConsentResult)
+  func onError(errorType: SocureSdk.SocureSDKErrorType, errorMessage: Swift.String)
+  func onScanCancelled()
 }
 public protocol BarcodeCallback : AnyObject {
   func handleBarcodeData(barcodeData: SocureSdk.BarcodeData?)
@@ -1617,6 +1635,7 @@ public enum PopTipActionAnimation {
 @objc @_inheritsConvenienceInitializers public class SelfieScanResult : ObjectiveC.NSObject {
   public var imageData: Foundation.Data?
   public var metaData: [Swift.String : Any]
+  public var sessionId: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1735,6 +1754,12 @@ public enum FieldKey : Swift.String, Swift.Equatable {
   public var rawValue: Swift.String {
     get
   }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ConsentHelperViewController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) weak public var consentCallBackDelegate: SocureSdk.ConsentCallback?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public init(ConsentCallback: SocureSdk.ConsentCallback)
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) weak public var imageCallbackDelegate: SocureSdk.ImageCallback?

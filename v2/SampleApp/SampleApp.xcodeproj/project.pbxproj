@@ -20,6 +20,7 @@
 		37C7E18B24D20D1E00AE5FE4 /* Document.json in Resources */ = {isa = PBXBuildFile; fileRef = 37C7E18824D20D1E00AE5FE4 /* Document.json */; };
 		37D6985424DDDB040021116F /* SelfieModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D6985324DDDB040021116F /* SelfieModalViewController.swift */; };
 		37D6985624E1BDD60021116F /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D6985524E1BDD50021116F /* UploadViewController.swift */; };
+		5950CC6929509726004C8415 /* ConsentModalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5950CC6829509726004C8415 /* ConsentModalVC.swift */; };
 		AD73ED1F5735DF2080818CF4 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F02FD3DDB8D37767A62B595 /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		37C7E18824D20D1E00AE5FE4 /* Document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Document.json; sourceTree = "<group>"; };
 		37D6985324DDDB040021116F /* SelfieModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieModalViewController.swift; sourceTree = "<group>"; };
 		37D6985524E1BDD50021116F /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		5950CC6829509726004C8415 /* ConsentModalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentModalVC.swift; sourceTree = "<group>"; };
 		749AC10DFE108BCE0BB100B9 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		8F02FD3DDB8D37767A62B595 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E5CEFD9C66768930C25E8B /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				373EB18C240815A700E5AA4C /* AppDelegate.swift */,
 				373EB190240815A700E5AA4C /* ViewController.swift */,
 				373BBD2F24CB304E00663B18 /* ModalViewController.swift */,
+				5950CC6829509726004C8415 /* ConsentModalVC.swift */,
 				375A8A3C2500057E00A1107C /* PassportModalViewController.swift */,
 				37D6985324DDDB040021116F /* SelfieModalViewController.swift */,
 				37D6985524E1BDD50021116F /* UploadViewController.swift */,
@@ -241,6 +244,7 @@
 				373EB1B62408224800E5AA4C /* BasicConfiguration.swift in Sources */,
 				37D6985424DDDB040021116F /* SelfieModalViewController.swift in Sources */,
 				375A8A3D2500057E00A1107C /* PassportModalViewController.swift in Sources */,
+				5950CC6929509726004C8415 /* ConsentModalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
