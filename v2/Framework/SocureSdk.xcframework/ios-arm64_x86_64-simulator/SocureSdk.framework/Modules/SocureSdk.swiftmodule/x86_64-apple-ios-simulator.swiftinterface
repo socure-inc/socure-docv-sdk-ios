@@ -525,12 +525,14 @@ extension SocureSdk.LottieLoopMode : Swift.Equatable {
   public var dataExtracted: Swift.Bool!
   public var metaData: [Swift.String : Any]
   public var sessionId: Swift.String?
+  public var sessionToken: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ConsentResult : ObjectiveC.NSObject {
   public var sessionId: Swift.String!
   public var message: Swift.String!
+  public var sessionToken: Swift.String!
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1636,6 +1638,7 @@ public enum PopTipActionAnimation {
   public var imageData: Foundation.Data?
   public var metaData: [Swift.String : Any]
   public var sessionId: Swift.String?
+  public var sessionToken: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
