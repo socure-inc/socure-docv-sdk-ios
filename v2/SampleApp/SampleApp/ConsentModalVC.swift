@@ -36,7 +36,7 @@ class ConsentModalVC: UIViewController {
 }
 extension ConsentModalVC: ConsentCallback {
     func consentResult(consentResult: ConsentResult) {
-        print("Consent Success: \(consentResult.sessionId ?? "") \(consentResult.sessionToken ?? "") \(consentResult.message ?? "")")
+        print("Consent Success: SessionId: \(consentResult.sessionId ?? "") Session Token:-\(consentResult.sessionToken ?? "") message:- \(consentResult.message ?? "")")
         self.dismiss(animated: true)
     }
     
