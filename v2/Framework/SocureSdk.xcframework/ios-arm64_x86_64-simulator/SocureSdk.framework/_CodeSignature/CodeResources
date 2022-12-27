@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SocureSdk-Swift.h</key>
 		<data>
-		Ny9WKY1sklpOA0+H0slmuBTOM08=
+		cwZbsRDPTB7rF2lvGr7j4o4dRoQ=
 		</data>
 		<key>Headers/SocureSdk.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kG/9YkQl0s+GqU/Ao/S8dSRqAzk=
+		n/MDgpNx0nI88fS+ryBH0A7QxuM=
 		</data>
 		<key>Inter-Bold.ttf</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Y6o0TvbO0sleQgs0xjA9539d0sc=
+		FutHEB6RPdsnw2YW4xW1OOTV1o0=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0wstj2Tfoslag2nMhEiErfBbzXE=
+		8nZ903nRda13cBHLuuLJk5R+oVI=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		D6wvpVHKcG64noohB10vmb2FAxU=
+		b6tBY+brs8wz//IgL+dmBhEwYaA=
 		</data>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VhobwvzeQAnIYgXDC0d1qBuzooc=
+		bVBJEih6AKXAZjUuZMX0pOxvrSk=
 		</data>
 		<key>OpenSans-Bold.ttf</key>
 		<data>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnOjHfBJ+DN6Usw1hfOlHUmBvEO5Y3Kc20VUZ25odXI=
+			7Lv0+akL/Vyc8hccvmoCrr6nO7K/RI8ph0Txr4rawQE=
 			</data>
 		</dict>
 		<key>Headers/SocureSdk.h</key>
@@ -190,14 +190,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9u3Z5cWB/IkCGZWXzYU/1qxruEtvQZmz7RT5TO04/I=
+			w7IR8xdwwtMj/jwK2whAJMkyyFhVk0dNMFWDc/M03Ns=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qwB9pJqhHaDOQSQLpuYKPPUCChC2R9hvBmrxbHp2nAI=
+			1PFQZnbfK5Zs87btQNQwaCWvivjVUxImML5PZ3l1FmM=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -211,14 +211,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3iIqJE+C3ZVwR/vEsuQd1iiWgIHjI1SqlLYt22DrEjY=
+			vlylNtGiuZNL6n7M2hqWUGIQU/Mzuz6Q1JgIfco9nB4=
 			</data>
 		</dict>
 		<key>Modules/SocureSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qkB+8fMIIGb/3rtU582Rfl5ZbtPZJEsQGP7nMcCM+hI=
+			0F8Pu23GtLTfiochhxY4o66chKNd6SBB4AXH7X/CmH8=
 			</data>
 		</dict>
 		<key>OpenSans-Bold.ttf</key>

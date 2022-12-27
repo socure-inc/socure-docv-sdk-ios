@@ -153,5 +153,12 @@ class ViewController: UIViewController {
             self.present(viewController, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func showConsent(_ sender: Any) {
+        let viewController = ConsentModalVC()
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.referenceViewController = self
+        self.present(viewController, animated: true, completion: nil)
+    }
 }
 

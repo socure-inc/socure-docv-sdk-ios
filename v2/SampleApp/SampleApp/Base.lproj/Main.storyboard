@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BareBonesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-yT-okr">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-yT-okr">
                                 <rect key="frame" x="20" y="54" width="172" height="36"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="9CF-0K-TRP"/>
                                 </constraints>
@@ -67,9 +68,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SvA-eX-tSM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SvA-eX-tSM">
                                 <rect key="frame" x="20" y="379" width="374" height="53"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="1ZW-l4-wGn"/>
                                 </constraints>
@@ -89,9 +90,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlH-3e-url">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlH-3e-url">
                                 <rect key="frame" x="20" y="697" width="374" height="53"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="23g-rC-a8T"/>
                                 </constraints>
@@ -103,9 +104,9 @@
                                     <action selector="didPressUploadButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzh-xN-hxu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-45-Lwe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-45-Lwe">
                                 <rect key="frame" x="222" y="54" width="172" height="36"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="H9M-zf-W6C"/>
                                 </constraints>
@@ -117,8 +118,24 @@
                                     <action selector="didCapturePassportWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDI-vV-wu9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPG-oH-haw">
+                                <rect key="frame" x="294" y="121" width="100" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Vpn-69-QLy"/>
+                                    <constraint firstAttribute="width" constant="100" id="xGb-py-dAs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Consent">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showConsent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LX0-mv-YcL"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SvA-eX-tSM" firstAttribute="leading" secondItem="W9a-8Z-8gu" secondAttribute="leading" id="0EA-4G-Sxs"/>
                             <constraint firstItem="LzM-Pm-TPL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1kX-f9-tpk"/>
@@ -136,6 +153,7 @@
                             <constraint firstItem="W9a-8Z-8gu" firstAttribute="leading" secondItem="rlH-3e-url" secondAttribute="leading" id="TIY-ej-56D"/>
                             <constraint firstItem="LzM-Pm-TPL" firstAttribute="trailing" secondItem="Cpp-3N-Z2v" secondAttribute="trailing" id="Urz-LL-rN7"/>
                             <constraint firstItem="7eZ-45-Lwe" firstAttribute="firstBaseline" secondItem="4qn-yT-okr" secondAttribute="baseline" id="YNt-ZO-oeB"/>
+                            <constraint firstItem="dPG-oH-haw" firstAttribute="centerY" secondItem="LzM-Pm-TPL" secondAttribute="centerY" id="azI-2a-pdn"/>
                             <constraint firstItem="7eZ-45-Lwe" firstAttribute="top" secondItem="4qn-yT-okr" secondAttribute="top" id="bnZ-qq-5F2"/>
                             <constraint firstItem="W9a-8Z-8gu" firstAttribute="trailing" secondItem="rlH-3e-url" secondAttribute="trailing" id="eFE-iY-sOg"/>
                             <constraint firstItem="eSd-fB-R21" firstAttribute="leading" secondItem="SvA-eX-tSM" secondAttribute="leading" id="fZ5-OH-rkB"/>
@@ -144,6 +162,7 @@
                             <constraint firstItem="now-LO-jbR" firstAttribute="leading" secondItem="eSd-fB-R21" secondAttribute="leading" id="lDT-Mn-h7d"/>
                             <constraint firstItem="7eZ-45-Lwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="lgS-DP-i6p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rlH-3e-url" secondAttribute="bottom" constant="112" id="mGN-9F-aIX"/>
+                            <constraint firstItem="dPG-oH-haw" firstAttribute="trailing" secondItem="7eZ-45-Lwe" secondAttribute="trailing" id="mIF-27-DhA"/>
                             <constraint firstItem="now-LO-jbR" firstAttribute="top" secondItem="LzM-Pm-TPL" secondAttribute="bottom" constant="17" id="no0-jj-D79"/>
                             <constraint firstItem="Cpp-3N-Z2v" firstAttribute="trailing" secondItem="7Fo-PL-R9a" secondAttribute="trailing" id="ow2-b9-KoQ"/>
                             <constraint firstItem="7Fo-PL-R9a" firstAttribute="trailing" secondItem="SvA-eX-tSM" secondAttribute="trailing" id="q5p-xc-neY"/>
@@ -156,7 +175,6 @@
                             <constraint firstItem="LzM-Pm-TPL" firstAttribute="trailing" secondItem="7eZ-45-Lwe" secondAttribute="trailing" id="xo3-oF-6Tc"/>
                             <constraint firstItem="W9a-8Z-8gu" firstAttribute="centerX" secondItem="ztE-zG-my5" secondAttribute="centerX" id="yM3-kI-flq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backImageLabel" destination="7Fo-PL-R9a" id="feh-kx-96o"/>
@@ -178,7 +196,7 @@
         <!--Upload View Controller-->
         <scene sceneID="gQj-8M-XPj">
             <objects>
-                <viewController storyboardIdentifier="UploadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jGf-af-AUj" customClass="UploadViewController" customModule="BareBonesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UploadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jGf-af-AUj" customClass="UploadViewController" customModule="SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KiB-zr-N0a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +231,7 @@
                                     <constraint firstAttribute="height" constant="38" id="TL0-hD-4Hg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-dL-NPk">
@@ -225,9 +243,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-bq-gbM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-bq-gbM">
                                 <rect key="frame" x="20" y="545" width="374" height="53"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="HTM-i6-zQb"/>
                                 </constraints>
@@ -241,15 +259,15 @@
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" text="Upload results would appear here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zVo-mq-CUz">
                                 <rect key="frame" x="20" y="652" width="374" height="210"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tNY-xs-edL">
                                 <rect key="frame" x="142" y="707" width="130" height="100"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-ip-uBy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-ip-uBy">
                                 <rect key="frame" x="275" y="44" width="116" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Close"/>
@@ -258,7 +276,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zjC-ci-8s5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="T21-Kv-Dkp" firstAttribute="trailing" secondItem="KiB-zr-N0a" secondAttribute="trailingMargin" id="16r-0l-Qpb"/>
                             <constraint firstItem="hks-xS-eRm" firstAttribute="top" secondItem="T21-Kv-Dkp" secondAttribute="bottom" constant="8" id="1VM-fz-XRH"/>
@@ -293,7 +312,6 @@
                             <constraint firstItem="ECu-ip-uBy" firstAttribute="top" secondItem="zjC-ci-8s5" secondAttribute="top" id="yaH-6w-wC9"/>
                             <constraint firstItem="5HD-dL-NPk" firstAttribute="top" secondItem="JcP-bq-gbM" secondAttribute="bottom" constant="8" id="zjW-YM-Y1c"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zjC-ci-8s5"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="tNY-xs-edL" id="XcP-7f-n1w"/>
@@ -313,4 +331,18 @@
             <point key="canvasLocation" x="127.53623188405798" y="782.8125"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

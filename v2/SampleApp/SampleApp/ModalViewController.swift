@@ -28,7 +28,7 @@ extension ModalViewController: ImageCallback  {
             let image = UIImage.init(data: imageData) else {
                 return
         }
-        print("documentFrontCallBack: CaptureType:\(docScanResult.captureType ?? -1)")
+        print("documentFrontCallBack: CaptureType:\(docScanResult.captureType ?? -1) sessionId: \(docScanResult.sessionId ?? "") sessionToken: \(docScanResult.sessionToken ?? "")")
         referenceViewController?.frontDocumentData = imageData
         referenceViewController?.frontImageView.image = image
         
@@ -43,7 +43,7 @@ extension ModalViewController: ImageCallback  {
             let image = UIImage.init(data: imageData) else {
                 return
         }
-        print("documentBackCallBack: CaptureType:\(docScanResult.captureType ?? -1) dataExtracted: \(docScanResult.dataExtracted ?? false)")
+        print("documentBackCallBack: CaptureType:\(docScanResult.captureType ?? -1) dataExtracted: \(docScanResult.dataExtracted ?? false) sessionId: \(docScanResult.sessionId ?? "") sessionToken: \(docScanResult.sessionToken ?? "")")
         referenceViewController?.backDocumentData = imageData
         referenceViewController?.backImageView.image = image
         
