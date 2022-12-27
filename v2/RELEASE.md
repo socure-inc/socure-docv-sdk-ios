@@ -1,7 +1,7 @@
 # Release Notes
 
 The Predictive Document Verification iOS SDK provides a framework to add image capture and upload services to your mobile application.
->Note: All SDK v2 integrations should be updated to version 2.2.2 to meet compliance requirements. Document verification services will be disabled for older SDK versions soon.
+>Note: All SDK v2 integrations should be updated to version 2.2.2 or above to meet compliance requirements. Document verification services will be disabled for older SDK versions soon.
 
 
 ## 2.3.0
