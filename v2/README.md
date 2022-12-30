@@ -42,7 +42,7 @@ pod install
 
 ## Configuration and Usage 
 
-For instructions on how to configure the SDK, see the [iOS SDK Documentation](https://developer.socure.com/guide/iossdk) on DevHub.
+For instructions on how to configure the SDK, see the [iOS SDK Documentation](https://developer.socure.com/docs/sdks/docv/ios-sdk/ios-sdk-v2) on DevHub.
 
 
 
