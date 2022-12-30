@@ -2,7 +2,7 @@
 
 The Predictive Document Verification (DocV) iOS SDK v3 provides a framework to add image capture and upload services to your mobile application.
 
->Note: All SDK v3 integrations should be updated to version 3.1.0 to meet compliance requirements. Document verification services will be disabled for older SDK versions soon.
+>Note: All SDK v3 integrations must be updated to version 3.1.0 or later to meet compliance requirements. Document verification services will be disabled for older SDK versions soon.
 
 ## Minimum requirements
 
