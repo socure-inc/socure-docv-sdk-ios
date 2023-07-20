@@ -1,8 +1,8 @@
-# Predictive DocV iOS SDK v3
+# Predictive DocV iOS SDK v4
 
-The Predictive Document Verification (DocV) iOS SDK v3 provides a framework to add image capture and upload services to your mobile application.
+Learn how to integrate the Predictive Document Verification (DocV) iOS into your iOS application. 
 
->Note: All SDK v3 integrations must be updated to version 3.1.0 or later to meet compliance requirements. Document verification services will be disabled for older SDK versions soon.
+>Note: Document verification services will be disabled for older SDK versions soon. All SDK integrations must be updated to version **3.1.0 or later** to meet compliance requirements.
 
 ## Minimum requirements
 
@@ -27,7 +27,7 @@ Install the Pod from the terminal:
 pod install
 ```
 
-**Note**: You must close the project and open the `xcworkspace` file after you install the pod for it to properly reflect in your project.
+>Note: You must close the project and open the `xcworkspace` file after you install the pod for it to properly reflect in your project.
 
 ### Swift Package Manager
 
@@ -39,4 +39,4 @@ https://github.com/socure-inc/socure-docv-sdk-ios
 
 ## Configuration and integration
 
-For instructions on how to configure the SDK, see the [iOS SDK documentation](https://developer.socure.com/docs/sdks/docv/ios-sdk/ios-sdk-v3/) on DevHub.
+For instructions on how to configure the SDK, see the [iOS SDK documentation](https://developer.socure.com/docs/sdks/docv/ios-sdk/v3-and-v4/quick-start) on DevHub.
