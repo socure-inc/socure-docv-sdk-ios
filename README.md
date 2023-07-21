@@ -6,7 +6,7 @@ Learn how to integrate the Predictive Document Verification (DocV) iOS into your
 
 ## Minimum requirements
 
-- Xcode version 13+
+- Xcode version 14.1+
 - Support for iOS 13 and later
 
 ## Installation
