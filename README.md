@@ -40,3 +40,4 @@ https://github.com/socure-inc/socure-docv-sdk-ios
 ## Configuration and integration
 
 For instructions on how to configure the SDK, see the [iOS SDK documentation](https://developer.socure.com/docs/sdks/docv/ios-sdk/v3-and-v4/quick-start) on DevHub.
+
