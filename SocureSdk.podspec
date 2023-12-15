@@ -30,8 +30,8 @@ Socure Document Verification SDK, iOS Version.
   s.ios.deployment_target = "12.0"
   s.swift_version = "5.0"
 
-  s.vendored_frameworks = "v2/Framework/SocureSdk.xcframework"
-  s.preserve_paths = "v2/Framework/SocureSdk.xcframework"
+  s.vendored_frameworks = "Deprecated/Framework/SocureSdk.xcframework"
+  s.preserve_paths = "Deprecated/Framework/SocureSdk.xcframework"
 
   s.ios.frameworks = 'UIKit'
   s.dependency 'TrustKit'
