@@ -12,8 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lblStatus: UILabel!
 
-    let socureDocV = SocureDocVHelper()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,16 +24,21 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func startScan(_ sender: Any) {
-        socureDocV.launch("REPLACE_KEY_HERE", presentingViewController: self, config: nil) { [weak self]
-            result in
+        let options = SocureDocVOptions(publicKey: "REPLACE_KEY_HERE",
+                                        docVTransactionToken: "REPLACE_TOKEN_HERE",
+                                        presentingViewController: self,
+                                        useSocureGov: false)
+
+        SocureDocVSDK.launch(options) { [weak self] result in
             switch result {
-            case .success(let scanInfo):
-                self?.updateStatus("Upload Success: \(scanInfo.docUUID)")
-                print(scanInfo)
-            case .failure(let errorVal):
-                self?.updateStatus(errorVal.errorMessage)
-                print("Flow failed due to \(errorVal)")
+            case .success(let successResult):
+                self?.updateStatus("Upload Success: \(successResult)")
+                print(successResult)
+            case .failure(let failureResult):
+                self?.updateStatus("Upload Failure: \(failureResult.error)")
+                print(failureResult)
             }
         }
+
     }
 }
