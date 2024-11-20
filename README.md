@@ -2,8 +2,6 @@
 
 Learn how to quickly integrate with the Predictive Document Verification (DocV) iOS SDK v5.
 
->Note: The Digital Intelligence SDK is required for all DocV iOS SDK v5 integrations. For more information, see [Digital Intelligence iOS SDK Quick Start Guide](https://developer.socure.com/docs/sdks/digital-intelligence/ios-sdk). 
-
 ## Table of Contents
 
 - [Getting started](#getting-started)
