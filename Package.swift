@@ -10,14 +10,13 @@ let package = Package(
             targets: ["SocureDocV"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/socure-inc/socure-sigmadevice-sdk-ios", from: "4.4.0")
     ],
     targets: [
         .binaryTarget(
             name: "SocureDocV",
-            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-4.5.0.zip",
-            checksum: "d433e86140d53cc906797c04fbe8258ee53e73277f7068e9740c2ffad0d1aea7"
+            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.0.5.zip",
+            checksum: "51876d2a6aa405b53bab0455ebd1fccc115e45ba15d28bb0c307fe1a0ba27744"
         )
     ]
 )
