@@ -2,8 +2,6 @@
 
 Learn how to quickly integrate with the Predictive Document Verification (DocV) iOS SDK v5.
 
->Note: The Digital Intelligence SDK is required for all DocV iOS SDK v5 integrations. For more information, see [Digital Intelligence iOS SDK Quick Start Guide](https://developer.socure.com/docs/sdks/digital-intelligence/ios-sdk). 
-
 ## Table of Contents
 
 - [Getting started](#getting-started)
@@ -22,7 +20,6 @@ Learn how to quickly integrate with the Predictive Document Verification (DocV) 
 
 Before you begin, ensure you have the following: 
 
-- Install the latest version of the [Digital Intelligence iOS SDK](https://developer.socure.com/docs/sdks/digital-intelligence/ios-sdk). 
 - Get a valid [ID+ key from Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/id-plus-keys) to authenticate API requests.
 - Get a valid [SDK key from Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/sdk-keys) to initialize and authenticate the DocV iOS SDK.
 - Add your IP address to the [allowlist in Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/allowlist).
@@ -136,9 +133,8 @@ To enable the DocV SDK functionality, add the following code to your app:
 func onButtonTapped() {
     let options = SocureDocVOptions(
         publicKey: "da3e907d-c5dd-41cb-80ee-xxxxxxxxxxxx",
-        docVTransactionToken: "78d1c86d-03a3-4e11-b837-71a31cb44142",
+        docvTransactionToken: "78d1c86d-03a3-4e11-b837-71a31cb44142",
         presentingViewController: self,
-        useSocureGov: false
     )
 
     SocureDocVSDK.launch(options) { 
@@ -165,9 +161,9 @@ The following table lists the `options` parameters:
 | Parameter                 | Type            | Description                                                                                                                                                              |
 |---------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `publicKey`                | String          | The unique SDK key obtained from [Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/sdk-keys) used to authenticate the SDK.                                                |
-| `docVTransactionToken`     | String          | The transaction token retrieved from the API response of the [`/documents/request`](https://developer.socure.com/reference#tag/Predictive-Document-Verification/operation/DocumentRequestV5) endpoint. Required to initiate the document verification session. |
+| `docvTransactionToken`     | String          | The transaction token retrieved from the API response of the [`/documents/request`](https://developer.socure.com/reference#tag/Predictive-Document-Verification/operation/DocumentRequestV5) endpoint. Required to initiate the document verification session. |
 | `presentingViewController` | UIViewController| The current view controller (referred to as `self`) that will present the SDK's user interface.                                                                           |
-| `useSocureGov`             | Bool            | A Boolean flag indicating whether to use the GovCloud environment. It defaults to `false`. This is only applicable for customers provisioned in the SocureGov environment. |
+| `useSocureGov`             | Bool            | Optional boolean flag indicating whether to use the GovCloud environment. Set to `true` to route requests to GovCloud. Only applicable for customers provisioned in the GovCloud environment.  |
 
 ### Handle the response
 
@@ -177,7 +173,7 @@ Your app can receive response callbacks using a `switch` statement when the flow
 
 If the consumer successfully completes the flow and the captured images are uploaded to Socure's servers, the `result` is `.success` and a message containing the `deviceSessionToken` is printed. This result contains a `deviceSessionToken`, a unique identifier for the session that can be used for accessing device details about the specific session.
 
-```
+```swift
 public struct SocureDocVSuccess {
     public let deviceSessionToken: String?
 }
@@ -201,7 +197,7 @@ public enum SocureDocVError {
     case sessionInitiationFailure
     case sessionExpired
     case invalidPublicKey
-    case invalidDocVTransactionToken
+    case invalidDocvTransactionToken
     case noInternetConnection
     case documentUploadFailure
     case userCanceled
@@ -218,7 +214,7 @@ The following table lists the error values that can be returned by the `SocureDo
 |---------------------------------|-------------------------------------------------------------|
 | `sessionExpired`               | Session expired                                             |
 | `invalidPublicKey`            | Invalid or missing SDK key                           |
-| `invalidDocVTransactionToken`| Invalid transaction token                                   |
+| `invalidDocvTransactionToken`| Invalid transaction token                                   |
 | `noInternetConnection`        | No internet connection                                      |
 | `documentUploadFailure`       | Failed to upload the documents                              |
 | `userCanceled`                 | Scan canceled by the user                                   |
