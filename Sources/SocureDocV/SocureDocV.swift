@@ -1,2 +1,2 @@
-@_exported import SocureDocVBinary
+@_exported import SocureDocV
 @_exported import DeviceRisk
