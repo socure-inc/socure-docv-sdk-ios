@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01817DFAB2C8B7C52CBB64CB /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACC959729C88014D57F5635 /* Pods_SampleApp.framework */; };
 		5925E0022703598200721C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5925E0012703598200721C4C /* AppDelegate.swift */; };
 		5925E0042703598200721C4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5925E0032703598200721C4C /* SceneDelegate.swift */; };
 		5925E0062703598200721C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5925E0052703598200721C4C /* ViewController.swift */; };
 		5925E0092703598200721C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5925E0072703598200721C4C /* Main.storyboard */; };
 		5925E00B2703598300721C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5925E00A2703598300721C4C /* Assets.xcassets */; };
 		5925E00E2703598300721C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5925E00C2703598300721C4C /* LaunchScreen.storyboard */; };
+		DA41C6812E3D71480070A741 /* SocureDocV in Frameworks */ = {isa = PBXBuildFile; productRef = DA41C6802E3D71480070A741 /* SocureDocV */; };
+		DA473CDB2E3D73C200C5892B /* DeviceRisk in Frameworks */ = {isa = PBXBuildFile; productRef = DA473CDA2E3D73C200C5892B /* DeviceRisk */; };
+		DA65A4012E5687C8004F801C /* SocureDocV in Frameworks */ = {isa = PBXBuildFile; productRef = DA65A4002E5687C8004F801C /* SocureDocV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34321EB487CFFC4992A990B6 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		3ACC959729C88014D57F5635 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5689997871FEA9EB4C39707F /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		5925DFFE2703598200721C4C /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5925E0012703598200721C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5925E0032703598200721C4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,29 +34,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01817DFAB2C8B7C52CBB64CB /* Pods_SampleApp.framework in Frameworks */,
+				DA41C6812E3D71480070A741 /* SocureDocV in Frameworks */,
+				DA65A4012E5687C8004F801C /* SocureDocV in Frameworks */,
+				DA473CDB2E3D73C200C5892B /* DeviceRisk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A32C19822D6FBAE880FD266 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34321EB487CFFC4992A990B6 /* Pods-SampleApp.debug.xcconfig */,
-				5689997871FEA9EB4C39707F /* Pods-SampleApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		5925DFF52703598200721C4C = {
 			isa = PBXGroup;
 			children = (
 				5925E0002703598200721C4C /* SampleApp */,
 				5925DFFF2703598200721C4C /* Products */,
-				5925E03127035A4E00721C4C /* Frameworks */,
-				0A32C19822D6FBAE880FD266 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +73,6 @@
 			path = SampleApp;
 			sourceTree = "<group>";
 		};
-		5925E03127035A4E00721C4C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3ACC959729C88014D57F5635 /* Pods_SampleApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,12 +80,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5925E0282703598300721C4C /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
-				64592DCAACD310EFED44BAA1 /* [CP] Check Pods Manifest.lock */,
 				5925DFFA2703598200721C4C /* Sources */,
 				5925DFFB2703598200721C4C /* Frameworks */,
 				5925DFFC2703598200721C4C /* Resources */,
-				3B1B0B79D6324F76B2FEB2CC /* [CP] Embed Pods Frameworks */,
-				C74FFFB8F546B7B877DE276B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 5925DFF52703598200721C4C;
+			packageReferences = (
+				DA65A3FF2E5687C8004F801C /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */,
+			);
 			productRefGroup = 5925DFFF2703598200721C4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,65 +141,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3B1B0B79D6324F76B2FEB2CC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64592DCAACD310EFED44BAA1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C74FFFB8F546B7B877DE276B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5925DFFA2703598200721C4C /* Sources */ = {
@@ -370,11 +293,10 @@
 		};
 		5925E0292703598300721C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34321EB487CFFC4992A990B6 /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2EK7X8MLUU;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -397,7 +319,7 @@
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socure.sampleapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Adhoc development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -407,7 +329,6 @@
 		};
 		5925E02A2703598300721C4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5689997871FEA9EB4C39707F /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -463,6 +384,52 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA41C67F2E3D71480070A741 /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socure-inc/socure-docv-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		DA473CD92E3D73C200C5892B /* XCRemoteSwiftPackageReference "socure-sigmadevice-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socure-inc/socure-sigmadevice-sdk-ios";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 4.6.0;
+				minimumVersion = 4.5.2;
+			};
+		};
+		DA65A3FF2E5687C8004F801C /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socure-inc/socure-docv-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA41C6802E3D71480070A741 /* SocureDocV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA41C67F2E3D71480070A741 /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */;
+			productName = SocureDocV;
+		};
+		DA473CDA2E3D73C200C5892B /* DeviceRisk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA473CD92E3D73C200C5892B /* XCRemoteSwiftPackageReference "socure-sigmadevice-sdk-ios" */;
+			productName = DeviceRisk;
+		};
+		DA65A4002E5687C8004F801C /* SocureDocV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA65A3FF2E5687C8004F801C /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */;
+			productName = SocureDocV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5925DFF62703598200721C4C /* Project object */;
 }
