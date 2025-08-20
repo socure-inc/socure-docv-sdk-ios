@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
     @IBAction func startScan(_ sender: Any) {
         let options = SocureDocVOptions(publicKey: "REPLACE_KEY_HERE",
-                                        docVTransactionToken: "REPLACE_TOKEN_HERE",
+                                        docvTransactionToken: "REPLACE_TOKEN_HERE",
                                         presentingViewController: self,
                                         useSocureGov: false)
 
