@@ -23,9 +23,20 @@ Before you begin, ensure you have the following:
 - Get a valid [ID+ key from Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/id-plus-keys) to authenticate API requests.
 - Get a valid [SDK key from Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/sdk-keys) to initialize and authenticate the DocV iOS SDK.
 - Add your IP address to the [allowlist in Admin Dashboard](https://developer.socure.com/docs/admin-dashboard/developers/allowlist).
-- Check that your development environment meets the following requirements:
-    - Xcode version 14.1+
-    - Support for iOS 13 and later
+
+### iOS SDK integration notes
+
+Check that your development environment meets the following requirements:
+  - Xcode version 14.1+
+  - Support for iOS 13 and later
+
+#### iOS Device SDK and DocV SDK compatibility
+
+When integrating the **DocV SDK** on iOS, you do not need to include both the **Device SDK** and the **DocV SDK**. The DocV SDK already includes the full functionality of the Device SDK.
+
+We recommend removing the standalone Device SDK when using the DocV SDK to avoid duplication or version conflicts.
+
+If you choose to include both, ensure that the Device SDK version is at least **v4.5.2** to maintain compatibility.
 
 ## Step 1: Generate a transaction token and configure the Capture App
 
