@@ -1,6 +1,8 @@
 // swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+
 import PackageDescription
+
 let package = Package(
     name: "SocureDocV",
     platforms: [
@@ -15,14 +17,14 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/socure-inc/socure-sigmadevice-sdk-ios",
-            "4.5.2"..<"4.6.0"
+            .upToNextMinor(from: "4.7.0")
         )
     ],
     targets: [
         .binaryTarget(
             name: "SocureDocV",
-            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.2.7.zip",
-            checksum: "68d1093c09925fb265615307149b6def0e9340497033690b5634fb1ebb0aa20c"
+            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.2.8.zip",
+            checksum: "08a80c7a79a61dcc601acebf16244e62730c5867fb0643262f8e19821aed1576"
         ),
         .target(
             name: "SocureDocVWrapper",

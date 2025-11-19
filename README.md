@@ -36,7 +36,7 @@ When integrating the **DocV SDK** on iOS, you do not need to include both the **
 
 We recommend removing the standalone Device SDK when using the DocV SDK to avoid duplication or version conflicts.
 
-If you choose to include both, ensure that the Device SDK version is at least **v4.5.2** to maintain compatibility.
+If you choose to include both, ensure that the Device SDK version is at least **v4.7.0** to maintain compatibility.
 
 ## Step 1: Generate a transaction token and configure the Capture App
 
