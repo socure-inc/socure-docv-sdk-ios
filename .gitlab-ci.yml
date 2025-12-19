@@ -1,0 +1,17 @@
+include:
+  - project: 'plt/gitlab-pipeline-templates'
+    file: jobs/publish/blackduck-scan.gitlab-ci.yml
+    ref: 'PLT-6510'
+
+stages:
+  - blackduck_scan
+
+variables:
+  # BlackDuck / Mend configuration
+  MEND_PRODUCT_NAME: "socure-external"
+  BLACKDUCK_SCAN: "true"
+  BLACKDUCK_STRICT_SCAN: "false"
+  # Disable accuracy enforcement to avoid FAILURE_ACCURACY_NOT_MET in Detect 11.x
+  DETECT_ACCURACY_REQUIRED: "NONE"
+
+
