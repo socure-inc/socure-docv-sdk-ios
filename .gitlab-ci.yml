@@ -1,7 +1,6 @@
 include:
   - project: 'plt/gitlab-pipeline-templates'
     file: jobs/publish/blackduck-scan.gitlab-ci.yml
-    ref: 'PLT-6510'
 
 stages:
   - blackduck_scan
