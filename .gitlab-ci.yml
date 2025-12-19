@@ -13,5 +13,7 @@ variables:
   BLACKDUCK_STRICT_SCAN: "false"
   # Disable accuracy enforcement to avoid FAILURE_ACCURACY_NOT_MET in Detect 11.x
   DETECT_ACCURACY_REQUIRED: "NONE"
+  # Limit Detect to signature scanner since Swift toolchain is not present in image
+  DETECT_TOOLS: "SIGNATURE_SCAN"
 
 
