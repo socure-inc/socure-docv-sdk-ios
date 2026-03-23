@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/socure-inc/socure-sigmadevice-sdk-ios",
       "state" : {
-        "revision" : "050007d138aa187f9d37dd98309f037fe2895bcc",
-        "version" : "4.5.2"
+        "revision" : "092792fa4b24d188f9b4580cc03dee10ff5b44de",
+        "version" : "4.8.1"
       }
     }
   ],
