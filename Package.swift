@@ -17,14 +17,14 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/socure-inc/socure-sigmadevice-sdk-ios",
-            .upToNextMinor(from: "4.7.0")
+            .upToNextMinor(from: "4.8.0")
         )
     ],
     targets: [
         .binaryTarget(
             name: "SocureDocV",
-            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.2.10.zip",
-            checksum: "7512f44c1385fb4cbbf97ff6f2303662ee640a513a1afb6ccdfc344d78a41a01"
+            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.2.11.zip",
+            checksum: "e07557beaecb850c97aa865b8cc526be8526d0956584e4baad9633ff9e970d59"
         ),
         .target(
             name: "SocureDocVWrapper",
