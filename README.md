@@ -61,7 +61,7 @@ curl --location 'https://service.socure.com/api/5.0/documents/request' \
   "config": {
     "useCaseKey": "customer_use_case_key", 
     ...
-  }
+  },
   "firstName": "Dwayne",
   "surName": "Denver",
   "dob": "1975-04-02",
@@ -146,6 +146,7 @@ func onButtonTapped() {
         publicKey: "da3e907d-c5dd-41cb-80ee-xxxxxxxxxxxx",
         docvTransactionToken: "78d1c86d-03a3-4e11-b837-71a31cb44142",
         presentingViewController: self,
+        useSocureGov: false
     )
 
     SocureDocVSDK.launch(options) { 
