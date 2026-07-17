@@ -27,8 +27,8 @@ Before you begin, ensure you have the following:
 ### iOS SDK integration notes
 
 Check that your development environment meets the following requirements:
-  - Xcode version 14.1+
-  - Support for iOS 13 and later
+  - Xcode version 15.3+
+  - Support for iOS 15 and later
 
 #### iOS Device SDK and DocV SDK compatibility
 
