@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SocureDocV"
-  s.version          = "5.4.0"
+  s.version          = "5.4.3"
   s.summary          = "Socure Document Verification SDK, iOS Version."
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ The SocureDocV SDK provides a user interface that guides consumers through the d
   s.homepage         = "https://github.com/socure-inc/socure-docv-sdk-ios"
   s.license           = { :type => 'Commercial', :file => 'SocureDocV.xcframework/LICENSE' }
   s.author           = {  "Socure Inc" => "support@socure.com" }
-  s.source           = { :http => "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.4.0.zip"}
+  s.source           = { :http => "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.4.3.zip"}
                                    
   s.platform = :ios
 

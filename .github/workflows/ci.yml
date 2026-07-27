@@ -14,7 +14,8 @@ jobs:
     uses: commercial/common-ci-cd-workflows/.github/workflows/global-security-scans.yml@main
     with:
       team: docv
-      service_name: docv-socure-docv-sdk-ios
+      service_name: socure-docv-sdk-ios
+      working_directory: SampleApp
       mend_product_name: socure-external
       enable_blackduck_scan: true
       enable_mend_scan: true
@@ -25,4 +26,11 @@ jobs:
       snyk_strict_scan: false
       detect_accuracy_required: NONE
       detect_tools: SIGNATURE_SCAN
+    secrets: inherit
+
+  sync-to-socure-inc:
+    if: github.ref_name == 'main'
+    uses: commercial/common-ci-cd-workflows/.github/workflows/global-sync-to-socure-inc-repos.yml@main
+    with:
+      target_repo: socure-inc/socure-docv-sdk-ios
     secrets: inherit

@@ -408,7 +408,7 @@
 			repositoryURL = "https://github.com/socure-inc/socure-docv-sdk-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.0;
+				minimumVersion = 5.4.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
