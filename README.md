@@ -27,8 +27,8 @@ Before you begin, ensure you have the following:
 ### iOS SDK integration notes
 
 Check that your development environment meets the following requirements:
-  - Xcode version 14.1+
-  - Support for iOS 13 and later
+  - Xcode version 16.1+
+  - Support for iOS 15.1 and later
 
 #### iOS Device SDK and DocV SDK compatibility
 
@@ -36,7 +36,7 @@ When integrating the **DocV SDK** on iOS, you do not need to include both the **
 
 We recommend removing the standalone Device SDK when using the DocV SDK to avoid duplication or version conflicts.
 
-If you choose to include both, ensure that the Device SDK version is at least **v4.7.0** to maintain compatibility.
+If you choose to include both, ensure that the Device SDK version is at least **v4.10.0** to maintain compatibility.
 
 ## Step 1: Generate a transaction token and configure the Capture App
 
@@ -94,7 +94,7 @@ curl --location 'https://service.socure.com/api/5.0/documents/request' \
 
 You can use either CocoPods or Swift Package Manager to add the DocV iOS SDK to your project. Depending on the dependency manager you want to use, follow the steps in one of the installation sections below. 
 
-### CocoaPods
+### CocoaPods (deprecated in nov 2026)
 
 To install the DocV iOS SDK using CocoaPods, add the following to your Podfile:
 
