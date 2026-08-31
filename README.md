@@ -145,7 +145,7 @@ func onButtonTapped() {
     let options = SocureDocVOptions(
         publicKey: "da3e907d-c5dd-41cb-80ee-xxxxxxxxxxxx",
         docvTransactionToken: "78d1c86d-03a3-4e11-b837-71a31cb44142",
-        presentingViewController: self,
+        presentingViewController: self
     )
 
     SocureDocVSDK.launch(options) { 
@@ -223,6 +223,7 @@ The following table lists the error values that can be returned by the `SocureDo
 
 | Enum Case                      | Error Description                                           |
 |---------------------------------|-------------------------------------------------------------|
+| `sessionInitiationFailure`     | Failed to initiate the session                              |
 | `sessionExpired`               | Session expired                                             |
 | `invalidPublicKey`            | Invalid or missing SDK key                           |
 | `invalidDocvTransactionToken`| Invalid transaction token                                   |
