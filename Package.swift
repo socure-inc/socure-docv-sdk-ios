@@ -23,8 +23,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SocureDocV",
-            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.5.2.zip",
-            checksum: "0e29fc4e93d9f880e4b6c4b6083f1d54d2eca926e118c2a6e5ecf57e28ed6475"
+            url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.6.0.zip",
+            checksum: "ab3bbbbfc8a59900a3583d30bedaed269667e45f0425874b7d5574a6d7a07dd8"
         ),
         .target(
             name: "SocureDocVWrapper",
