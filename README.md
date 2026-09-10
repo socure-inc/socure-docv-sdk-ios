@@ -94,7 +94,7 @@ curl --location 'https://service.socure.com/api/5.0/documents/request' \
 
 You can use either CocoPods or Swift Package Manager to add the DocV iOS SDK to your project. Depending on the dependency manager you want to use, follow the steps in one of the installation sections below. 
 
-### CocoaPods (deprecated in nov 2026)
+### CocoaPods (deprecated in Nov 2026)
 
 To install the DocV iOS SDK using CocoaPods, add the following to your Podfile:
 
@@ -213,6 +213,7 @@ public enum SocureDocVError {
     case documentUploadFailure
     case userCanceled
     case consentDeclined
+    case guardianConsentDeclined
     case cameraPermissionDeclined
     case unknown
 }
@@ -230,6 +231,7 @@ The following table lists the error values that can be returned by the `SocureDo
 | `documentUploadFailure`       | Failed to upload the documents                              |
 | `userCanceled`                 | Scan canceled by the user                                   |
 | `consentDeclined`              | Consent declined by the user                                            |
+| `guardianConsentDeclined`    | Consent declined by the guardian      |
 | `cameraPermissionDeclined`    | Permissions to open the camera declined by the user      |
 | `unknown`                       | Unknown error                                               |
 
