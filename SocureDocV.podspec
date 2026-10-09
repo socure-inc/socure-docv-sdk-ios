@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SocureDocV"
-  s.version          = "5.6.0"
+  s.version          = "5.6.1"
   s.summary          = "Socure Document Verification SDK, iOS Version."
 
   s.description      = <<-DESC
@@ -18,14 +18,14 @@ The SocureDocV SDK provides a user interface that guides consumers through the d
   s.homepage         = "https://github.com/socure-inc/socure-docv-sdk-ios"
   s.license           = { :type => 'Commercial', :file => 'SocureDocV.xcframework/LICENSE' }
   s.author           = {  "Socure Inc" => "support@socure.com" }
-  s.source           = { :http => "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.6.0.zip"}
+  s.source           = { :http => "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-5.6.1.zip"}
                                    
   s.platform = :ios
 
-  s.ios.deployment_target = "15.1"
+  s.ios.deployment_target = "15.0"
   s.ios.vendored_frameworks = 'SocureDocV.xcframework'
   s.ios.resource_bundles = { 'SocureDocV' => ['SocureDocV.xcframework/PrivacyInfo.xcprivacy'] }
   s.ios.frameworks = 'UIKit'
   
-  s.dependency 'SocureDeviceRisk', '~> 4.10.0'
+  s.dependency 'SocureDeviceRisk', '~> 4.11.0'
 end
