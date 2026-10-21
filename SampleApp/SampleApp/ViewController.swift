@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         let options = SocureDocVOptions(publicKey: "REPLACE_KEY_HERE",
                                         docvTransactionToken: "REPLACE_TOKEN_HERE",
                                         presentingViewController: self,
-                                        useSocureGov: false)
+                                        useSocureGov: false,
+                                        disableNavigationContextTracking: false)
 
         SocureDocVSDK.launch(options) { [weak self] result in
             switch result {
