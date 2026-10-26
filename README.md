@@ -175,6 +175,7 @@ The following table lists the `options` parameters:
 | `docvTransactionToken`     | String          | The transaction token retrieved from the API response of the [`/documents/request`](https://developer.socure.com/reference#tag/Predictive-Document-Verification/operation/DocumentRequestV5) endpoint. Required to initiate the document verification session. |
 | `presentingViewController` | UIViewController| The current view controller (referred to as `self`) that will present the SDK's user interface.                                                                           |
 | `useSocureGov`             | Bool            | Optional boolean flag indicating whether to use the GovCloud environment. Set to `true` to route requests to GovCloud. Only applicable for customers provisioned in the GovCloud environment.  |
+| `disableNavigationContextTracking` | Bool    | Optional boolean flag that disables automatic navigation context tracking in the bundled Digital Intelligence SDK. Defaults to `false`. Automatic tracking uses method swizzling and captures navigation contexts for UIKit screens only. Set to `true` in SwiftUI apps to control navigation contexts manually. |
 
 ### Handle the response
 
