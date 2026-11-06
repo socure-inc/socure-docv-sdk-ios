@@ -19,11 +19,9 @@ jobs:
       mend_product_name: socure-external
       enable_blackduck_scan: true
       enable_mend_scan: true
-      enable_snyk_scan: true
       jdk_scan: true
       blackduck_strict_scan: false
       mend_strict_scan: false
-      snyk_strict_scan: false
       detect_accuracy_required: NONE
       detect_tools: SIGNATURE_SCAN
     secrets: inherit
