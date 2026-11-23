@@ -45,6 +45,10 @@ playground.xcworkspace
 
 # Swift Package Manager
 .build/
+# Written when make build and make test resolve the packages. Not committed, so
+# that both resolve the dependency versions a new integration would get.
+/Package.resolved
+/Tests/Package.resolved
 
 # CocoaPods
 Pods/

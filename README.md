@@ -20,6 +20,7 @@ Learn how to quickly integrate with the Predictive Document Verification (DocV) 
 - [Existing ID+ customers](#existing-id-customers)
 - [External dependencies](#external-dependencies)
 - [Run locally](#run-locally)
+- [Run tests](#run-tests)
 
 ## Getting started
 
@@ -42,7 +43,7 @@ When integrating the **DocV SDK** on iOS, you do not need to include both the **
 
 We recommend removing the standalone Device SDK when using the DocV SDK to avoid duplication or version conflicts.
 
-If you choose to include both, ensure that the Device SDK version is at least **v4.10.0** to maintain compatibility.
+If you choose to include both, use Device SDK **v4.11.1** or a later v4.11.x release. The DocV SDK's `Package.swift` accepts versions from 4.11.1 up to, but not including, 4.12.0, so Swift Package Manager can't resolve a Device SDK version outside that range.
 
 ## Step 1: Generate a transaction token and configure the Capture App
 
@@ -457,3 +458,47 @@ To run the sample app:
 ### Run the sample app with your local changes
 
 The sample app uses the published `socure-docv-sdk-ios` package from GitHub, not your working copy. To test changes to `Package.swift`, open `SampleApp/SampleApp.xcworkspace` and drag the repository root folder (the folder that contains `Package.swift`) into the Project navigator, at the top level next to the `SampleApp` project. Xcode then uses your local package instead of the published one. Do not commit this change to the workspace.
+
+The repository root folder must be named `socure-docv-sdk-ios`, as it is when you clone it with the command above. Xcode matches a local package to the published one by folder name, so under any other name it reports that the package identity doesn't match.
+
+## Run tests
+
+The tests in the `Tests` folder check this package against this README. They run in the iOS Simulator and fail when:
+
+- the framework that `Package.swift` downloads isn't the version that its URL names.
+- `SocureDocVError` has a case that the enum under [Failure](#failure) doesn't list, or the other way round.
+- the code in [Initialize and launch the SDK](#initialize-and-launch-the-sdk) no longer compiles, or the `SocureDocVOptions` defaults no longer match the [`options` parameters](#options-parameters).
+
+Before you start, make sure you have the following:
+
+- macOS 14.5 or later with Xcode 16.1 or later, selected as the active developer directory. The Command Line Tools alone aren't enough. If `xcodebuild -version` fails, install Xcode and run `sudo xcode-select -s /Applications/Xcode.app`.
+- An iOS simulator runtime. If none is installed, run `xcodebuild -downloadPlatform iOS`.
+- Network access to `github.com` and `sdk.socure.com`. Swift Package Manager downloads the DocV and Device Risk SDKs during the build.
+
+You don't need credentials, because the tests don't call Socure's APIs.
+
+To run the tests:
+
+1. List the available iPhone simulators and pick one by name, for example `iPhone 17`:
+
+    ```bash
+    xcrun simctl list devices available iPhone
+    ```
+
+2. From the repository root, build the package and the sample app. Both commands must end with `** BUILD SUCCEEDED **`.
+
+    ```bash
+    xcodebuild -scheme SocureDocV -destination 'generic/platform=iOS Simulator' build
+    xcodebuild -project SampleApp/SampleApp.xcodeproj -scheme SampleApp -destination 'generic/platform=iOS Simulator' build
+    ```
+
+3. Run the tests in the simulator that you picked. Replace `iPhone 17` with its name.
+
+    ```bash
+    cd Tests
+    xcodebuild test -scheme SocureDocVTests-Package -destination 'platform=iOS Simulator,name=iPhone 17'
+    ```
+
+    When every test passes, the command ends with `** TEST SUCCEEDED **` and exits with status 0. When a test fails, it prints the failure, ends with `** TEST FAILED **`, and exits with a non-zero status.
+
+4. To check the full flow, [run the sample app](#run-locally) on a device and complete a document capture.

@@ -16,19 +16,17 @@ jobs:
       team: docv
       service_name: docv-socure-docv-sdk-ios
       working_directory: SampleApp
-      mend_product_name: socure-external
       enable_blackduck_scan: true
-      enable_mend_scan: true
       jdk_scan: true
       blackduck_strict_scan: false
-      mend_strict_scan: false
       detect_accuracy_required: NONE
       detect_tools: SIGNATURE_SCAN
     secrets: inherit
 
   sync-to-socure-inc:
     if: github.ref_name == 'main'
-    uses: commercial/common-ci-cd-workflows/.github/workflows/global-sync-to-socure-inc-repos.yml@main
+    uses: commercial/common-ci-cd-workflows/.github/workflows/global-sync-to-socure-inc-with-exclude.yml@main
     with:
       target_repo: socure-inc/socure-docv-sdk-ios
+      exclude_paths: 'README_INTERNAL.md Makefile Scripts Tests'
     secrets: inherit
