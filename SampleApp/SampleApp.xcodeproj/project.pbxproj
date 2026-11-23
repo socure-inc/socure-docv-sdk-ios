@@ -13,8 +13,6 @@
 		5925E0092703598200721C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5925E0072703598200721C4C /* Main.storyboard */; };
 		5925E00B2703598300721C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5925E00A2703598300721C4C /* Assets.xcassets */; };
 		5925E00E2703598300721C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5925E00C2703598300721C4C /* LaunchScreen.storyboard */; };
-		DA41C6812E3D71480070A741 /* SocureDocV in Frameworks */ = {isa = PBXBuildFile; productRef = DA41C6802E3D71480070A741 /* SocureDocV */; };
-		DA473CDB2E3D73C200C5892B /* DeviceRisk in Frameworks */ = {isa = PBXBuildFile; productRef = DA473CDA2E3D73C200C5892B /* DeviceRisk */; };
 		DA65A4012E5687C8004F801C /* SocureDocV in Frameworks */ = {isa = PBXBuildFile; productRef = DA65A4002E5687C8004F801C /* SocureDocV */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA41C6812E3D71480070A741 /* SocureDocV in Frameworks */,
 				DA65A4012E5687C8004F801C /* SocureDocV in Frameworks */,
-				DA473CDB2E3D73C200C5892B /* DeviceRisk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -281,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,7 +290,6 @@
 		5925E0292703598300721C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -334,7 +329,6 @@
 		5925E02A2703598300721C4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -394,44 +388,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DA41C67F2E3D71480070A741 /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/socure-inc/socure-docv-sdk-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
-		DA473CD92E3D73C200C5892B /* XCRemoteSwiftPackageReference "socure-sigmadevice-sdk-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/socure-inc/socure-sigmadevice-sdk-ios";
-			requirement = {
-				kind = versionRange;
-				maximumVersion = 4.6.0;
-				minimumVersion = 4.5.2;
-			};
-		};
 		DA65A3FF2E5687C8004F801C /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socure-inc/socure-docv-sdk-ios";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.7.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DA41C6802E3D71480070A741 /* SocureDocV */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA41C67F2E3D71480070A741 /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */;
-			productName = SocureDocV;
-		};
-		DA473CDA2E3D73C200C5892B /* DeviceRisk */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA473CD92E3D73C200C5892B /* XCRemoteSwiftPackageReference "socure-sigmadevice-sdk-ios" */;
-			productName = DeviceRisk;
-		};
 		DA65A4002E5687C8004F801C /* SocureDocV */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA65A3FF2E5687C8004F801C /* XCRemoteSwiftPackageReference "socure-docv-sdk-ios" */;

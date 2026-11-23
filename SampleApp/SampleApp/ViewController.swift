@@ -1,8 +1,6 @@
 //
 //  ViewController.swift
-//  SdkWrapper
-//
-//  Created by Umamageshwaran Rajendran on 28/09/21.
+//  SampleApp
 //
 
 import UIKit
@@ -12,11 +10,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lblStatus: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
     func updateStatus(_ status: String) {
         DispatchQueue.main.async {
             [weak self] in

@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/socure-inc/socure-docv-sdk-ios",
       "state" : {
-        "revision" : "943ec1bd5a736d7c207644c2c2e42757bad3dcdc",
-        "version" : "5.2.10"
+        "revision" : "2dfa3cb4aebea910b4725ce82910d5cc62971bba",
+        "version" : "5.7.2"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/socure-inc/socure-sigmadevice-sdk-ios",
       "state" : {
-        "revision" : "313bdbbaed4a35a05a12ab67167aab4429c2aff7",
-        "version" : "4.7.1"
+        "revision" : "ec36dbdeaa3318c30b6eba088df934f6c3123f93",
+        "version" : "4.11.1"
       }
     }
   ],
